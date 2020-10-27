@@ -103,6 +103,7 @@ nav {
 /* nav */
 .navbar-toggler {
   background: #FF7549;
+  height: 4rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -118,11 +119,8 @@ footer {
   font-size: 1.4rem;
 }
 
-footer ul {
-  list-style: none;
-}
-
 div.footer-container {
+  padding: 7.2rem 0;
   background-color: #F2B705;
 }
 

@@ -3,10 +3,8 @@ footer{
     background-color:#241E46;
     color: $orange;
     font-size: 1.4rem;
-    ul{
-        list-style: none;
-    }
 }
 div.footer-container{
+    padding: $md-space 0;
     background-color: $yellow;
 }
