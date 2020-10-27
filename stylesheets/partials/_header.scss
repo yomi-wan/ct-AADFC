@@ -1,0 +1,15 @@
+nav{
+    background: $text-light;
+    padding: 1rem;
+}
+
+/* nav */
+.navbar-toggler {
+    background: $orange;
+}
+
+@media screen and (min-width:992px) {
+    .collapse:not(.show) {
+        display: block;
+    }
+}

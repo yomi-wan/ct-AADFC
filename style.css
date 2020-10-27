@@ -1,0 +1,17 @@
+/*
+Theme Name: AADFC
+Theme URI: URL to your Theme
+Author: Yomi
+Author URI: Author (dev) website URL
+Description: practice themeing for capstone
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: AADFC
+Tags: Used to find your theme when user(s) searches in the themes panel.
+*/
+
+
+/** CSS Styles go here **/
+@import "css/reset.css";
+@import "stylesheets/style.css";

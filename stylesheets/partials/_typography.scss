@@ -1,0 +1,59 @@
+// typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.banner p{
+    font-size: $mH1;
+    font-family: $headingFont;
+    line-height: $headingLineHeight;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    color: $orange;
+}
+h1{
+    text-transform: capitalize;
+    color: $background-color;
+}
+h2{
+    font-size: $mH2;
+}
+h3{
+    font-size: $mH3;
+}
+.banner p{
+    font-size: $mBannerFont;
+    color: $orange;
+    line-height: $headingLineHeight;
+}
+li, 
+ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 700px){
+
+
+}
+@media only screen and (min-width: 1000px){
+h1{
+    font-size: $h1;
+}
+    .banner p{
+        font-size: $bannerFont;
+    }
+    h2{
+        font-size: $h2;
+    }
+    h3{
+        font-size: $h3;
+    }
+}

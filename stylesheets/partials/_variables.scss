@@ -1,0 +1,30 @@
+// colours
+$orange: #FF7549;
+$yellow: #F2B705;
+$red:#E92640;
+$purple: #8c1b64;
+$background-color:#241E46;
+$text-dark: #0D0D0D;
+$text-light: #fff;
+
+//type
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;600&display=swap');
+$baseFont: 'Montserrat', sans-serif;
+$headingFont: 'Oswald', sans-serif;
+$baseFontSize: 0.625rem;
+
+$baseLineHeight: 1.5;
+$headingLineHeight: 1.2;
+
+$bodyFont: 1.8rem;
+$xsFont: 1.4rem;
+// mobile
+$mH1: 1.6rem;
+$mBannerFont: 2.4rem;
+$mH2: 3.2rem;
+$mH3: 2.4rem;
+//desktop
+$h1: 2.4rem;
+$bannerFont: 7.57rem;
+$h2: 5.68rem;
+$h3: 4.26rem;
