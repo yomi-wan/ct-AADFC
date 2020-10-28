@@ -34,6 +34,33 @@ body {
   height: 100%;
 }
 
+section.bg-white {
+  margin-bottom: 7.2rem;
+  background-color: #fff;
+  padding: 7.2rem 0;
+}
+
+section.bg-white h2 {
+  color: #241E46;
+}
+
+.home section {
+  margin-bottom: 7.2rem;
+}
+
+.home section:nth-of-type(2) {
+  background-color: #fff;
+  padding: 7.2rem 0;
+}
+
+.home section:nth-of-type(2) h2 {
+  color: #241E46;
+}
+
+.home section:last-of-type {
+  margin-bottom: 0;
+}
+
 h1,
 h2,
 h3,
@@ -140,6 +167,10 @@ footer a:hover {
 .footer-container aside {
   padding: 4.8rem 10px;
   background-color: #F2B705;
+  color: #fff;
+}
+
+.footer-container aside h3 {
   color: #fff;
 }
 

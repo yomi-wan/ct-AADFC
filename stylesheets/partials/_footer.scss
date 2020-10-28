@@ -21,6 +21,9 @@ footer{
     padding: $md-space 10px;
     background-color: $yellow;
     color: $text-light;
+    h3{
+        color: $text-light;
+    }
 
     &:first-of-type{
         background-color: $purple;
