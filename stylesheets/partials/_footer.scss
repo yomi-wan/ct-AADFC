@@ -1,10 +1,39 @@
 /* footer */
 footer{
-    background-color:#241E46;
+    background-color:$background-color;
     color: $orange;
-    font-size: 1.4rem;
+    font-size: $xsFont;
+    p{
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        color: $orange;
+    }
 }
-div.footer-container{
-    padding: $md-space 0;
+.footer-container aside{
+    padding: $md-space 10px;
     background-color: $yellow;
+    height: 264px;
+    
+}
+.footer-container aside:first-of-type{
+    background-color: $purple;
+    height: 312px;
+}
+
+@media screen and (min-width:768px) {
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        aside{
+        padding: $md-space;
+    }
+    }
+    
+    .footer-container aside:first-of-type{
+        text-align: right;
+    }
+
 }

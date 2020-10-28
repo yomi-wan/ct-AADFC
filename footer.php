@@ -12,12 +12,8 @@
 ?>
         </div> 
         <!-- closing tag for site-content"> -->
-        <div class="footer-container">
-            <div class="container">
-                <div class="row">
+        <div class="footer-container d-flex  flex-wrap align-items-end">
                     <?php get_template_part( 'template-parts/sidebar', 'footer' ); ?>
-                </div>
-            </div>
         </div>
 
         <footer>
@@ -27,7 +23,7 @@
                 <li><a href="#">Terms &amp; Conditions</a> |</li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
-            <p class="m-0">Designed &amp Developed by KIY Designs</p>
+            <p class="m-0">Designed &amp; Developed by KIY Designs</p>
         </div>
         <?php wp_footer(); ?>
     </body>

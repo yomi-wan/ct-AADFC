@@ -142,7 +142,7 @@ if (! function_exists( 'aadfc_widgets_init' )) {
                 'name'          => __('Footer Widget', 'aadfc'),
                 'id'            => 'footer-widget',
                 'description'   => __('Footer widget area', 'aadfc'),
-                'before_widget' => '<aside id="%1$s" class="widget col-6">',
+                'before_widget' => '<aside id="%1$s" class="widget col-12 col-md-6">',
                 'after_widget'  => '</aside>',
                 'before_title'  => '<h3 class="widget-title">',
                 'after_title'   => '</h3>',

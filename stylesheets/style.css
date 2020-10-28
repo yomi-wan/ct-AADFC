@@ -119,9 +119,41 @@ footer {
   font-size: 1.4rem;
 }
 
-div.footer-container {
-  padding: 7.2rem 0;
+footer p {
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  color: #FF7549;
+}
+
+.footer-container aside {
+  padding: 4.8rem 10px;
   background-color: #F2B705;
+  height: 264px;
+}
+
+.footer-container aside:first-of-type {
+  background-color: #8c1b64;
+  height: 312px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .footer-container aside {
+    padding: 4.8rem;
+  }
+  .footer-container aside:first-of-type {
+    text-align: right;
+  }
 }
 
 .primary-btn {
