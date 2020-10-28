@@ -3,24 +3,50 @@ footer{
     background-color:$background-color;
     color: $orange;
     font-size: $xsFont;
+    padding: $xs-space 0;
     p{
         padding: 0;
         margin: 0;
     }
     a{
         color: $orange;
+        &:hover{
+            color: $red;
+        }
     }
 }
-.footer-container aside{
+.footer-container{
+    margin-top: $xl-space;
+    aside{
     padding: $md-space 10px;
     background-color: $yellow;
-    height: 264px;
+    color: $text-light;
+
+    &:first-of-type{
+        background-color: $purple;
+        height: 312px;
+        h3{
+            text-transform: capitalize;
+        }
+    }
+    }
+    ul {
+        li{
+            line-height: 2;
+           a{
+        font-family: $headingFont;
+        text-transform: uppercase;
+        color: $text-dark;
+        &:hover{
+            color: $red;
+        }
+        } 
+        } 
+    }
     
 }
-.footer-container aside:first-of-type{
-    background-color: $purple;
-    height: 312px;
-}
+
+
 
 @media screen and (min-width:768px) {
     .footer-container {
@@ -29,11 +55,12 @@ footer{
 
         aside{
         padding: $md-space;
-    }
+
+        &aside:first-of-type{
+            text-align: right;
+        }
+        }
+
     }
     
-    .footer-container aside:first-of-type{
-        text-align: right;
-    }
-
 }

@@ -117,6 +117,7 @@ footer {
   background-color: #241E46;
   color: #FF7549;
   font-size: 1.4rem;
+  padding: 1.2rem 0;
 }
 
 footer p {
@@ -128,15 +129,41 @@ footer a {
   color: #FF7549;
 }
 
+footer a:hover {
+  color: #E92640;
+}
+
+.footer-container {
+  margin-top: 12rem;
+}
+
 .footer-container aside {
   padding: 4.8rem 10px;
   background-color: #F2B705;
-  height: 264px;
+  color: #fff;
 }
 
 .footer-container aside:first-of-type {
   background-color: #8c1b64;
   height: 312px;
+}
+
+.footer-container aside:first-of-type h3 {
+  text-transform: capitalize;
+}
+
+.footer-container ul li {
+  line-height: 2;
+}
+
+.footer-container ul li a {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #0D0D0D;
+}
+
+.footer-container ul li a:hover {
+  color: #E92640;
 }
 
 @media screen and (min-width: 768px) {
@@ -151,7 +178,7 @@ footer a {
   .footer-container aside {
     padding: 4.8rem;
   }
-  .footer-container aside:first-of-type {
+  .footer-container asideaside:first-of-type {
     text-align: right;
   }
 }

@@ -19,8 +19,8 @@
         <footer>
         <div class="container d-md-flex justify-content-between align-items-center">
             <ul class="d-flex flex-wrap">
-                <li>&copy;<?php echo date('Y'); ?> Africans &amp; African Descendant Friendship Club of St. Albert |</li>
-                <li><a href="#">Terms &amp; Conditions</a> |</li>
+                <li>&copy;<?php echo date('Y'); ?> Africans &amp; African Descendant Friendship Club | </li>
+                <li><a href="#">Terms &amp; Conditions</a> | </li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
             <p class="m-0">Designed &amp; Developed by KIY Designs</p>
