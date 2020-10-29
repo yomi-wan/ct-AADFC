@@ -72,6 +72,7 @@
             <div class="secondary-btn"><a href="<?php echo esc_url( $cta_link ); ?>">View All Events</a></div>
             <?php endif; ?>
 
+            
         </section><!-- end of events -->
 
         <section>

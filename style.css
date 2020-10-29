@@ -13,5 +13,4 @@ Tags: Used to find your theme when user(s) searches in the themes panel.
 
 
 /** CSS Styles go here **/
-@import "css/reset.css";
 @import "stylesheets/style.css";
