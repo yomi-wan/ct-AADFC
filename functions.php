@@ -110,7 +110,7 @@ foreach ( $aadfc_includes as $file ) {
 				'public' => true,
 				'has_archive' => true,
 				'rewrite' => array('slug' => 'events'),
-				'menu_position' => 20,
+				'menu_position' => 30,
 				'menu_icon' => 'dashicons-buddicons-groups',
 				'capability_type'    => 'page',
 				'taxonomies' => array('category', 'post_tag'),
@@ -119,6 +119,8 @@ foreach ( $aadfc_includes as $file ) {
 	
 			register_post_type('events', $args  );
 		}
+		// Hooking up our function to theme setup
+add_action('init', 'create_post_type_events');
 		// post pagination
 		function page_pagination_nav(){
 			global $wp_query;
@@ -158,5 +160,3 @@ foreach ( $aadfc_includes as $file ) {
 		}
 		return $query;
 
-// Hooking up our function to theme setup
-add_action('init', 'create_post_type_events');
