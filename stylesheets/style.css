@@ -235,12 +235,15 @@ footer a:hover {
 .primary-btn {
   background-color: #FF7549;
   border-radius: 100px;
-  color: #fff;
   padding: 1.1rem 0;
   width: 16.7rem;
   text-align: center;
   -webkit-box-shadow: 0px 3px 6px #0D0D0D;
           box-shadow: 0px 3px 6px #0D0D0D;
+}
+
+.primary-btn a {
+  color: #fff;
 }
 
 .secondary-btn {
@@ -256,5 +259,15 @@ footer a:hover {
   color: #FF7549;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+}
+
+.secondary-btn:hover {
+  background-color: #FF7549;
+  -webkit-box-shadow: 0px 3px 6px #0D0D0D;
+          box-shadow: 0px 3px 6px #0D0D0D;
+}
+
+.secondary-btn:hover a {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
