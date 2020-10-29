@@ -39,7 +39,7 @@ get_header();
             <!-- end while loop -->
         <?php  endwhile;?>
         <?php else : ?>
-        <!-- send to search page / some other general page with search function, tags, categorys, archives,etc.. -->
+        <!-- send to search page / some other general page with search function, tags, categories, archives,etc.. -->
             <?php get_template_part('template-parts/content', 'none'); ?>
         
     <?php endif; ?>   
