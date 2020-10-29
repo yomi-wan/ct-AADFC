@@ -9,7 +9,7 @@
 
     ?>
     <!-- //gives the page a class-name and displays the page id# -->
-    <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+    <section <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
         <header class="entry-header">
             <!-- //get the page title -->
@@ -31,4 +31,4 @@
             <!-- //adds a link to edit your content -->
             <?php edit_post_link( __( 'Edit', 'theme-name-here' ), '<span class="edit-link">', '</span>' ); ?>
         </footer><!-- .entry-footer -->
-    </article><!-- #post/page-## -->
+    </section><!-- #post/page-## -->
