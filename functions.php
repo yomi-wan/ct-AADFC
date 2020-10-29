@@ -49,7 +49,7 @@ add_action('wp_enqueue_scripts', 'aadfc_enqueue_styles');
 		'flex-width' => true,
 		'default-text-color' => '',
 		'header-text' => true,
-		'uploads' => true
+		'uploads' => true,
 	);
 
 }
@@ -74,7 +74,7 @@ add_theme_support('custom-logo', array(
 	'width' => 400,
 	'flex-height' => true,
 	'flex-width' => true,
-	'header-text' => array('site-title', 'site-description')
+	'header-text' => array('site-title', 'site-description'),
 ));
 
 // Register widget 
@@ -101,7 +101,7 @@ foreach ( $aadfc_includes as $file ) {
 				'featured_image'        => _x( 'Event Post Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' ),
 				'set_featured_image'    => _x( 'Set cover image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
 				'remove_featured_image' => _x( 'Remove cover image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
-				'use_featured_image'    => _x( 'Use as cover image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'textdomain' )
+				'use_featured_image'    => _x( 'Use as cover image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
 	
 			);
 			// creates the post functionality that you want for a full listing
@@ -114,7 +114,7 @@ foreach ( $aadfc_includes as $file ) {
 				'menu_icon' => 'dashicons-buddicons-groups',
 				'capability_type'    => 'page',
 				'taxonomies' => array('category', 'post_tag'),
-				'supports'=> array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields')
+				'supports'=> array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields'),
 			);
 	
 			register_post_type('events', $args  );
@@ -131,7 +131,7 @@ foreach ( $aadfc_includes as $file ) {
 					'base' => get_pagenum_link(1) . '%_%',
 					'format' => '/page/%#%',
 					'current' => $current_page,
-					'total' => $total_pages
+					'total' => $total_pages,
 				));
 			}
 		}
