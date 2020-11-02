@@ -151,6 +151,21 @@ nav {
   height: 4rem;
 }
 
+div.site-logo img {
+  height: 100px;
+  width: 100px;
+}
+
+.nav-bar-nav a.nav-link {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #8c1b64;
+}
+
+.nav-bar-nav a.nav-link:hover {
+  color: #FF7549;
+}
+
 @media screen and (min-width: 992px) {
   .collapse:not(.show) {
     display: block;

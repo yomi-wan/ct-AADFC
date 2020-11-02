@@ -18,15 +18,39 @@
             <?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
             <!-- what we do section start -->
             <h2><?php the_field('what_heading'); ?></h2>
-            <div class="entry-content">
-                <!-- display page or post content -->
-                <?php 
-                        the_content(); 
-                    
-                    ?>
-
-                <!-- other things you could put in here would be: pagination (more used for blog posts), custom posts, anything you need for site. -->
+            <div class="row">
+            <div class="col-12 col-md-4">
+                <?php if (have_rows('community')): ?>
+                    <?php while (have_rows('community')):  the_row();?>
+                    <div class="community">
+                        <img src="<?php the_sub_field('image');?>" alt="">
+                        <?php the_sub_field('text');?>
+                    </div>
+                <?php endwhile; ?>
+                <?php endif; ?>
             </div>
+            <div class="col-12 col-md-4">
+                <?php if (have_rows('culture')): ?>
+                    <?php while (have_rows('culture')):  the_row();?>
+                    <div class="culture">
+                        <img src="<?php the_sub_field('image');?>" alt="">
+                        <?php the_sub_field('text');?>
+                    </div>
+                <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
+            <div class="col-12 col-md-4">
+                <?php if (have_rows('volunteer')): ?>
+                    <?php while (have_rows('volunteer')):  the_row();?>
+                    <div class="volunteer">
+                        <img src="<?php the_sub_field('image');?>" alt="">
+                        <?php the_sub_field('text');?>
+                    </div>
+                <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
+            </div>
+
         </div>
     </section>
     <div class="container home">
@@ -75,11 +99,19 @@
             
         </section><!-- end of events -->
 
-        <section>
+        <section class="community">
             <!-- aadfc community section -->
 
             <h2><?php the_field('community_heading'); ?></h2>
+            <div class="entry-content">
+                <!-- display page or post content -->
+                <?php 
+                        the_content(); 
+                    
+                    ?>
 
+                
+            </div>
         </section><!-- end of community section -->
 
 

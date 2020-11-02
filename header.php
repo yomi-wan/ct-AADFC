@@ -25,10 +25,12 @@
     <header>
         <nav class="navbar navbar-expand-lg col" role="navigation">
             <div class="container justify-content-between">
-                <?php if ( has_custom_logo() ) : ?>
-                <div class="site-logo"><?php the_custom_logo(); ?></div>
-                <?php endif; ?>
-                <h1>Africans &amp; African Descendant Friendship Club of St. Albert</h1>
+                <div class="d-flex">
+                    <?php if ( has_custom_logo() ) : ?>
+                    <div class="site-logo"><?php the_custom_logo(); ?></div>
+                    <?php endif; ?>
+                    <h1>Africans &amp; African Descendant<br>Friendship Club of St. Albert</h1>
+                </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1"
                     aria-expanded="false" aria-label="Toggle Navigation">

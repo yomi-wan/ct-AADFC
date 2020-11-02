@@ -8,6 +8,19 @@ nav{
     background: $orange;
     height: $icon;
 }
+div.site-logo img{
+   height: 100px;
+   width: 100px;
+
+}
+.nav-bar-nav a.nav-link {
+    font-family: $headingFont;
+    text-transform: uppercase;
+    color: $purple;
+    &:hover{
+        color: $orange;
+    }
+}
 
 @media screen and (min-width:992px) {
     .collapse:not(.show) {
