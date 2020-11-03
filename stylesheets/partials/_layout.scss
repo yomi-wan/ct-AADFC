@@ -47,26 +47,28 @@ body {
       background-color: transparent;
   }
 // home page
-section.bg-white {
+section{
   margin-bottom: $lg-space;
-  background-color: $text-light;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+section.bg-white {
   padding: $lg-space 0;
+  background-color: $text-light;
   h2 {
     color: $background-color;
   }
+
 }
-.home {
-  section {
-    margin-bottom: $lg-space;
-    &:nth-of-type(2) {
-      background-color: $text-light;
-      padding: $lg-space 0;
-      h2 {
-        color: $background-color;
-      }
-    }
-    &:last-of-type {
-      margin-bottom: 0;
-    }
+
+.wwedo{
+  align-items: center;
+  margin-bottom: $sm-space;
+  img{
+    height: 110px;
+    width:auto;
+    margin: 0 auto;
   }
+
 }

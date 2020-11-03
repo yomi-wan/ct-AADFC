@@ -12,115 +12,123 @@
 <!--gives the page class-name and displays a page id -->
 <main <?php post_class();?> id="post-<?php the_ID();?>">
     <!-- entry header -->
+    <!-- if you had an image it will display using wordpress' largest default thumbnail sizing (settings in the admin - you can see the sizes) -->
+    <?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
     <section class="bg-white">
+        <!-- what we do section start -->
         <div class="container">
-            <!-- if you had an image it will display using wordpress' largest default thumbnail sizing (settings in the admin - you can see the sizes) -->
-            <?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-            <!-- what we do section start -->
-            <h2><?php the_field('what_heading'); ?></h2>
+            <h2><?php the_field('what_heading'); ?> <div class="ball"></div>
+            </h2>
             <div class="row">
-            <div class="col-12 col-md-4">
-                <?php if (have_rows('community')): ?>
+                <div class="col-12 col-md-4">
+                    <?php if (have_rows('community')): ?>
                     <?php while (have_rows('community')):  the_row();?>
-                    <div class="community">
-                        <img src="<?php the_sub_field('image');?>" alt="">
+                    <div class="wwedo community d-flex flex-md-column">
+                        <div class="col-6 col-md-12"><img src="<?php the_sub_field('image');?>" alt="community icon">
+                        </div>
                         <?php the_sub_field('text');?>
                     </div>
-                <?php endwhile; ?>
-                <?php endif; ?>
-            </div>
-            <div class="col-12 col-md-4">
-                <?php if (have_rows('culture')): ?>
+                    <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col-12 col-md-4">
+                    <?php if (have_rows('culture')): ?>
                     <?php while (have_rows('culture')):  the_row();?>
-                    <div class="culture">
-                        <img src="<?php the_sub_field('image');?>" alt="">
-                        <?php the_sub_field('text');?>
+                    <div class="wwedo culture d-flex flex-md-column">
+                        <div class="col-6 col-md-12 order-2 order-md-1"><img src="<?php the_sub_field('image');?>"
+                                alt="culture icon"></div>
+                        <p class="order-md-2"><?php the_sub_field('text');?></p>
                     </div>
-                <?php endwhile; ?>
-                <?php endif; ?>
-            </div>
-            <div class="col-12 col-md-4">
-                <?php if (have_rows('volunteer')): ?>
+                    <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col-12 col-md-4">
+                    <?php if (have_rows('volunteer')): ?>
                     <?php while (have_rows('volunteer')):  the_row();?>
-                    <div class="volunteer">
-                        <img src="<?php the_sub_field('image');?>" alt="">
+                    <div class="wwedo volunteer d-flex flex-md-column">
+                        <div class="col-6"><img src="<?php the_sub_field('image');?>" alt="volunteer icon"></div>
                         <?php the_sub_field('text');?>
                     </div>
-                <?php endwhile; ?>
-                <?php endif; ?>
-            </div>
+                    <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
             </div>
 
         </div>
     </section>
-    <div class="container home">
-        <section>
-            <!-- event section start -->
 
-            <h2><?php the_field('events_heading'); ?></h2>
-            <!-- custom event posts -->
-            <?php 
+    <section class="container">
+        <!-- event section start -->
+
+        <h2><?php the_field('events_heading'); ?> <div class="ball"></div>
+        </h2>
+        <!-- custom event posts -->
+        <?php 
                 $args = array( 'post_type' => 'events', 'posts_per_page' => 3 );
                 $the_query = new WP_Query( $args ); 
             ?>
 
-            <div class="row">
-                <?php if ( $the_query->have_posts() ) : ?>
-                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                <div class="col-md-4">
-                    <div class="card-layout">
-                        <a href="<?php the_permalink(); ?>">
-                            <div class="aspect-ratio-box">
-                                <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+        <div class="row">
+            <?php if ( $the_query->have_posts() ) : ?>
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+            <div class="col-md-4">
+                <div class="card-layout">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="aspect-ratio-box">
+                            <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
-                                <div class="trans-box">
-                                    <?php the_title('<h3 class="card-title">', '</h3>'); ?>
-                                    <p><?php echo  $card_footer['date']; ?></p>
-                                </div>
+                            <div class="trans-box">
+                                <?php the_title('<h3 class="card-title">', '</h3>'); ?>
+                                <p><?php echo  $card_footer['date']; ?></p>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-
-
-                <?php wp_reset_postdata(); ?>
-                <?php endwhile; ?>
-                <?php else : ?>
-                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-                <?php endif; ?>
             </div>
 
-            <?php  $cta_link = get_field('event_btn'); ?>
 
-            <?php if( $cta_link ): ?>
-            <div class="secondary-btn"><a href="<?php echo esc_url( $cta_link ); ?>">View All Events</a></div>
+            <?php wp_reset_postdata(); ?>
+            <?php endwhile; ?>
+            <?php else : ?>
+            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
             <?php endif; ?>
+        </div>
 
-            
-        </section><!-- end of events -->
+        <?php  $cta_link = get_field('event_btn'); ?>
 
-        <section class="community">
-            <!-- aadfc community section -->
+        <?php if( $cta_link ): ?>
+        <div class="secondary-btn"><a href="<?php echo esc_url( $cta_link ); ?>">View All Events</a></div>
+        <?php endif; ?>
 
-            <h2><?php the_field('community_heading'); ?></h2>
+
+    </section><!-- end of events -->
+
+    <section class="community bg-white">
+        <!-- aadfc community section -->
+        <div class="container">
+
+            <h2><?php the_field('community_heading'); ?><div class="ball"></div>
+            </h2>
             <div class="entry-content">
                 <!-- display page or post content -->
                 <?php 
-                        the_content(); 
-                    
-                    ?>
+                            the_content(); 
+                        
+                        ?>
 
-                
+
             </div>
-        </section><!-- end of community section -->
+        </div>
+    </section><!-- end of community section -->
 
 
-        <section>
-            <!-- aadfc sponsors section -->
+    <section class="container">
+        <!-- aadfc sponsors section -->
 
-            <h3><?php the_field('sponsors_heading'); ?></h3>
+        <h3><?php the_field('sponsors_heading'); ?> <div class="ball"></div>
+        </h3>
 
-        </section> <!-- end of sponsors section -->
+    </section> <!-- end of sponsors section -->
 
-    </div>
+
 </main>

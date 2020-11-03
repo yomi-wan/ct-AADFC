@@ -5,55 +5,94 @@ h3,
 h4,
 h5,
 h6,
-.banner p{
-    font-size: $mH1;
-    font-family: $headingFont;
-    line-height: $headingLineHeight;
-    padding: 0;
-    margin: 0;
-    text-transform: uppercase;
-    color: $orange;
+.banner p {
+  font-size: $mH1;
+  font-family: $headingFont;
+  line-height: $headingLineHeight;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: $orange;
+  margin-bottom: $sm-space;
 }
-h1{
-    text-transform: capitalize;
-    color: $background-color;
+h1 {
+  text-transform: capitalize;
+  color: $background-color;
+  margin: 0;
 }
-h2{
-    font-size: $mH2;
+h2 {
+  font-size: $mH2;
 }
-h3{
-    font-size: $mH3;
+h3 {
+  font-size: $mH3;
 }
-.banner p{
-    font-size: $mBannerFont;
-    color: $orange;
-    line-height: $headingLineHeight;
+.banner p {
+  font-size: $mBannerFont;
+  color: $orange;
+  line-height: $headingLineHeight;
 }
-li, 
-ul{
-    padding:0;
-    margin:0;
-    list-style: none;
+li,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-a{
+a {
+  text-decoration: none;
+  color: $text-dark;
+  &:hover {
     text-decoration: none;
+  }
+}
+nav a {
+  font-family: $headingFont;
+  font-size: $mH3;
+  color: $text-light;
+  text-transform: uppercase;
+  &:hover {
+    color: $orange;
+  }
+}
+.ball {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  background-color: $red;
+  border-radius: 100%;
+}
+.community ul {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    line-height: 2;
+
+    a {
+      background-color: $yellow;
+
+      &:hover {
+        background: none;
+      }
+    }
+  }
 }
 
-@media only screen and (min-width: 700px){
-
-
+@media only screen and (min-width: 700px) {
 }
-@media only screen and (min-width: 1000px){
-h1{
+@media only screen and (min-width: 992px) {
+  h1 {
     font-size: $h1;
-}
-    .banner p{
-        font-size: $bannerFont;
-    }
-    h2{
-        font-size: $h2;
-    }
-    h3{
-        font-size: $h3;
-    }
+  }
+  .banner p {
+    font-size: $bannerFont;
+  }
+  h2 {
+    font-size: $h2;
+  }
+  h3 {
+    font-size: $h3;
+  }
+
+  nav a {
+    color: $purple;
+  }
 }

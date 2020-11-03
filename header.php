@@ -25,7 +25,7 @@
     <header>
         <nav class="navbar navbar-expand-lg col" role="navigation">
             <div class="container justify-content-between">
-                <div class="d-flex">
+                <div class="d-flex align-items-center">
                     <?php if ( has_custom_logo() ) : ?>
                     <div class="site-logo"><?php the_custom_logo(); ?></div>
                     <?php endif; ?>

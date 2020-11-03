@@ -52,31 +52,34 @@ body {
   background-color: transparent;
 }
 
-section.bg-white {
+section {
   margin-bottom: 7.2rem;
-  background-color: #fff;
+}
+
+section:last-of-type {
+  margin-bottom: 0;
+}
+
+section.bg-white {
   padding: 7.2rem 0;
+  background-color: #fff;
 }
 
 section.bg-white h2 {
   color: #241E46;
 }
 
-.home section {
-  margin-bottom: 7.2rem;
+.wwedo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.4rem;
 }
 
-.home section:nth-of-type(2) {
-  background-color: #fff;
-  padding: 7.2rem 0;
-}
-
-.home section:nth-of-type(2) h2 {
-  color: #241E46;
-}
-
-.home section:last-of-type {
-  margin-bottom: 0;
+.wwedo img {
+  height: 110px;
+  width: auto;
+  margin: 0 auto;
 }
 
 h1,
@@ -93,11 +96,13 @@ h6,
   margin: 0;
   text-transform: uppercase;
   color: #FF7549;
+  margin-bottom: 2.4rem;
 }
 
 h1 {
   text-transform: capitalize;
   color: #241E46;
+  margin: 0;
 }
 
 h2 {
@@ -123,9 +128,53 @@ ul {
 
 a {
   text-decoration: none;
+  color: #0D0D0D;
 }
 
-@media only screen and (min-width: 1000px) {
+a:hover {
+  text-decoration: none;
+}
+
+nav a {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.4rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #FF7549;
+}
+
+.ball {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  background-color: #E92640;
+  border-radius: 100%;
+}
+
+.community ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.community ul li {
+  line-height: 2;
+}
+
+.community ul li a {
+  background-color: #F2B705;
+}
+
+.community ul li a:hover {
+  background: none;
+}
+
+@media only screen and (min-width: 992px) {
   h1 {
     font-size: 2.4rem;
   }
@@ -137,6 +186,9 @@ a {
   }
   h3 {
     font-size: 4.26rem;
+  }
+  nav a {
+    color: #8c1b64;
   }
 }
 
@@ -152,23 +204,17 @@ nav {
 }
 
 div.site-logo img {
-  height: 100px;
-  width: 100px;
-}
-
-.nav-bar-nav a.nav-link {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  color: #8c1b64;
-}
-
-.nav-bar-nav a.nav-link:hover {
-  color: #FF7549;
+  width: 5rem;
+  height: 100%;
 }
 
 @media screen and (min-width: 992px) {
   .collapse:not(.show) {
     display: block;
+  }
+  div.site-logo img {
+    width: 10rem;
+    height: 100%;
   }
 }
 
