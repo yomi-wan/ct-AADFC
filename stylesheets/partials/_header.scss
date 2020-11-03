@@ -17,11 +17,16 @@ div.site-logo img{
 }
 div.content-banner{
     background: $background-color;
-    background: linear-gradient($background-color, $background-color), url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd.scaled.jpg);
+    background-image: url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
     background-size: cover;
-    background-position: top center;
+    background-position: bottom center;
     background-repeat: no-repeat;
-    padding: 4rem 1rem;
+    padding-top: $xl-space;
+
+    .banner{
+        background-color: $trans-blue;
+        padding: $sm-space 1rem;
+    }
 }
 
 @media screen and (min-width:992px) {

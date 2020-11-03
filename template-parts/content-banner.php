@@ -1,6 +1,6 @@
 <?php
 /**
- * The sidebar containing the footer widget area.
+ * The sidebar containing the banner widget area.
  *
  * @package AADFC
  */

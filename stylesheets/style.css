@@ -117,6 +117,7 @@ h3 {
   font-size: 2.4rem;
   color: #FF7549;
   line-height: 1.2;
+  text-transform: capitalize;
 }
 
 li,
@@ -213,12 +214,16 @@ div.site-logo img {
 
 div.content-banner {
   background: #241E46;
-  background: -webkit-gradient(linear, left top, left bottom, from(#241E46), to(#241E46)), url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd.scaled.jpg);
-  background: linear-gradient(#241e46a6, #241E46a6), url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd.scaled.jpg);
+  background-image: url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
   background-size: cover;
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
-  padding: 4rem 1rem;
+  padding-top: 12rem;
+}
+
+div.content-banner .banner {
+  background-color: #241E46D3;
+  padding: 2.4rem 1rem;
 }
 
 @media screen and (min-width: 992px) {
