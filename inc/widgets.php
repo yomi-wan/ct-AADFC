@@ -136,6 +136,19 @@ if (! function_exists( 'aadfc_widgets_init' )) {
             )
         );
 
+        //banner
+        register_sidebar(
+            array(
+                'name'          => __('Banner', 'aadfc'),
+                'id'            => 'banner-sidebar',
+                'description'   => __('Banner widget area', 'aadfc'),
+                'before_widget' => '<div id="%1$s" class="widget banner col-12 col-md-6 %2$s">',
+                'after_widget'  => '</div>',
+                'before_title'  => '<h3 class="widget-title">',
+                'after_title'   => '</h3>',
+            )
+        );
+
         //footer widget
         register_sidebar(
             array(

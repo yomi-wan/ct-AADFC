@@ -195,17 +195,30 @@ nav a:hover {
 nav {
   background: #fff;
   padding: 1rem;
+  box-shadow: -3px 4px 5px -3px #0D0D0D;
+  -webkit-box-shadow: -3px 4px 5px -3px #0D0D0D;
 }
 
 /* nav */
-.navbar-toggler {
-  background: #FF7549;
-  height: 4rem;
+.navbar-toggler i {
+  color: #FF7549;
+  font-size: 4rem;
 }
 
 div.site-logo img {
   width: 5rem;
   height: 100%;
+  padding-right: 1rem;
+}
+
+div.content-banner {
+  background: #241E46;
+  background: -webkit-gradient(linear, left top, left bottom, from(#241E46), to(#241E46)), url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd.scaled.jpg);
+  background: linear-gradient(#241e46a6, #241E46a6), url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd.scaled.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 4rem 1rem;
 }
 
 @media screen and (min-width: 992px) {

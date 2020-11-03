@@ -14,6 +14,13 @@
     <!-- entry header -->
     <!-- if you had an image it will display using wordpress' largest default thumbnail sizing (settings in the admin - you can see the sizes) -->
     <?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+    <div class="content-banner">
+        <div class="container">
+            <div class="row">
+                <?php get_template_part('template-parts/content', 'banner'); ?>
+            </div>
+        </div>
+    </div>
     <section class="bg-white">
         <!-- what we do section start -->
         <div class="container">
