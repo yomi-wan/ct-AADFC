@@ -17,18 +17,46 @@ div.site-logo img{
 }
 div.content-banner{
     background: $background-color;
-    background-image: url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
+    background: linear-gradient(#241e4600, #241e46e1), url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
     background-size: cover;
-    background-position: bottom center;
+    background-position: top center;
     background-repeat: no-repeat;
     padding-top: $xl-space;
+    position: relative;
+    
 
-    .banner{
-        background-color: $trans-blue;
-        padding: $sm-space 1rem;
+}
+@media (min-width: 768px) {
+    /* md */
+    div.content-banner{
+        background: #241E46;
+        background-color: transparent;
+        background-image: none;
+        display: flex;
+        height: 420px;
+        overflow: hidden;
+        padding: 0;  
+
+        .banner-image {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            min-width: 50vw;
+            min-height: 50vw;
+            border-radius: 100%;
+            overflow: hidden;
+            z-index:-1;
+            background: transparent;
+            background-image: url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        } 
+        .banner p{
+            z-index:2;
+        }  
     }
 }
-
 @media screen and (min-width:992px) {
     .collapse:not(.show) {
         display: block;
@@ -37,4 +65,20 @@ div.content-banner{
         width: 10rem; 
         height: 100%; 
      }
+     div.content-banner{
+        height: 600px;
+        .banner p {
+            font-size: 72px;
+     
+         }
+    }
+
 }
+
+@media (min-width: 1200px) { 
+    /* xl screens */
+    .banner-image{
+        max-width: 892px;
+        max-height: 892px;
+    }
+ }
