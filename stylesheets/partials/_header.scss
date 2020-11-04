@@ -15,6 +15,7 @@ div.site-logo img{
    height: 100%;
    padding-right: 1rem;
 }
+// banner
 div.content-banner{
     background: $background-color;
     background: linear-gradient(#241e4600, #241e46e1), url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
@@ -23,9 +24,8 @@ div.content-banner{
     background-repeat: no-repeat;
     padding-top: $xl-space;
     position: relative;
-    
-
 }
+
 @media (min-width: 768px) {
     /* md */
     div.content-banner{
@@ -39,10 +39,10 @@ div.content-banner{
 
         .banner-image {
             position: absolute;
-            top: 0;
-            left: 50%;
-            min-width: 50vw;
-            min-height: 50vw;
+            top: -10%;
+            left: 45%;
+            width: 70vw;
+            height: 70vw;
             border-radius: 100%;
             overflow: hidden;
             z-index:-1;

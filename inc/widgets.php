@@ -142,7 +142,7 @@ if (! function_exists( 'aadfc_widgets_init' )) {
                 'name'          => __('Banner', 'aadfc'),
                 'id'            => 'banner-widget',
                 'description'   => __('Banner widget area', 'aadfc'),
-                'before_widget' => '<div class="container"><div class="row"><div id="%1$s" class="widget banner col-12 col-md-6 col-lg-8 %2$s">',
+                'before_widget' => '<div class="container"><div class="row"><div id="%1$s" class="widget banner col-12 col-md-8 %2$s">',
                 'after_widget'  => '</div></div></div>',
                 'before_title'  => '<h3 class="widget-title">',
                 'after_title'   => '</h3>',
