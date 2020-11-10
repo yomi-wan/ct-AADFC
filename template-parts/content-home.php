@@ -73,16 +73,12 @@
                 $the_query = new WP_Query( $args ); 
             ?>
 
-        <div>
+        <div class="events-front-page">
         <?php echo do_shortcode('[MEC id="147"]'); ?>
         
         </div>
 
-        <?php  $cta_link = get_field('event_btn'); ?>
-
-        <?php if( $cta_link ): ?>
-        <div class="secondary-btn"><a href="<?php echo esc_url( $cta_link ); ?>">View All Events</a></div>
-        <?php endif; ?>
+        <div class="secondary-btn"><a href="<?php the_field('event_btn'); ?>">View All Events</a></div>
 
 
     </section><!-- end of events -->

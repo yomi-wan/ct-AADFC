@@ -6,50 +6,15 @@ html {
 
 body {
   background-color: #241E46;
+  background: transparent linear-gradient(163deg, #241E46 0%, #1F2A5C 67%, #30376A 100%) 0% 0% no-repeat padding-box;
   color: #0D0D0D;
   font-size: 1.8rem;
   min-width: 320px;
   font-family: "Montserrat", sans-serif;
 }
 
-/* single event posts */
-.card-layout {
-  padding: 0;
-  background: #8c1b64;
+.events-front-page a {
   color: #fff;
-}
-
-.aspect-ratio-box {
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  padding-top: calc(400 / 600 * 100%);
-}
-
-.card-layout a {
-  color: #fff;
-}
-
-.aspect-ratio-box img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.trans-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 2.4rem;
-  width: 100%;
-  height: 100%;
-  background-color: #8c1b64d8;
-}
-
-.trans-box:hover {
-  background-color: transparent;
 }
 
 section {
@@ -80,6 +45,18 @@ section.bg-white h2 {
   height: 110px;
   width: auto;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 700px) {
+  .wwedo div:first-child {
+    background-color: #FF7549;
+    border-radius: 100%;
+    border: 10px solid #ffffff;
+    width: 200px;
+  }
+  .wwedo img {
+    margin: 35px auto;
+  }
 }
 
 h1,
@@ -168,7 +145,8 @@ nav a:hover {
 }
 
 .community ul li a {
-  background-color: #F2B705;
+  -webkit-box-shadow: inset 0 -1rem 0 0 #F2B705;
+          box-shadow: inset 0 -1rem 0 0 #F2B705;
 }
 
 .community ul li a:hover {
@@ -269,6 +247,16 @@ div.content-banner {
   }
   div.content-banner .banner p {
     font-size: 72px;
+  }
+  li.current_page_item a.nav-link::before {
+    content: "";
+    position: relative;
+    top: -15px;
+    background: #E92640;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    left: calc(50% - 8px);
   }
 }
 
@@ -392,5 +380,31 @@ footer a:hover {
 
 .secondary-btn:hover a {
   color: #fff;
+}
+
+div.contact-content {
+  background-color: #FF7549;
+}
+
+.nf-form-title h3 {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.4rem;
+}
+
+div.nf-form-content label {
+  font-size: 1.8rem;
+  color: #FF7549;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  line-height: 1.8rem;
+}
+
+div.nf-form-content input {
+  border-radius: 1rem !important;
+}
+
+div.nf-form-content textarea {
+  border-radius: 1rem !important;
 }
 /*# sourceMappingURL=style.css.map */

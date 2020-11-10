@@ -72,6 +72,18 @@ div.content-banner{
      
          }
     }
+    li.current_page_item a.nav-link::before {
+        content: "";
+        position: relative;
+        top: -15px;
+        background: $red;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 100%;
+        left:calc(50% - 8px);
+    }
+
+    
 
 }
 
