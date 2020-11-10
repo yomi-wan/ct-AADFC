@@ -73,30 +73,9 @@
                 $the_query = new WP_Query( $args ); 
             ?>
 
-        <div class="row">
-            <?php if ( $the_query->have_posts() ) : ?>
-            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-            <div class="col-md-4">
-                <div class="card-layout">
-                    <a href="<?php the_permalink(); ?>">
-                        <div class="aspect-ratio-box">
-                            <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-
-                            <div class="trans-box">
-                                <?php the_title('<h3 class="card-title">', '</h3>'); ?>
-                                <p><?php echo  $card_footer['date']; ?></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-
-            <?php wp_reset_postdata(); ?>
-            <?php endwhile; ?>
-            <?php else : ?>
-            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-            <?php endif; ?>
+        <div>
+        <?php echo do_shortcode('[MEC id="147"]'); ?>
+        
         </div>
 
         <?php  $cta_link = get_field('event_btn'); ?>

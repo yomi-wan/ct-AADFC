@@ -34,6 +34,41 @@ add_action('wp_enqueue_scripts', 'aadfc_enqueue_styles');
 	// thumbnails
 	add_theme_support('post-thumbnails');
 
+	// theme colours
+// 	add_theme_support( 'editor-color-palette',
+// array( 'name' => 'purple', 'color' => '#8C1B64' ),
+// array( 'name' => 'red', 'color' => '#E92640' ),
+// array( 'name' => 'orange', 'color' => '#FF7549' ),
+// array( 'name' => 'yellow', 'color' => '#F2B705' ),
+// array( 'name' => 'navy', 'color' => '#241E46' ),
+// array( 'name' => 'white', 'color' => '#fff' ),
+// array( 'name' => 'black', 'color' => '#0D0D0D' ),
+// );
+
+add_theme_support( 'editor-color-palette', array(
+	array(
+		'name' => __( 'strong magenta', 'aadfc' ),
+		'slug' => 'strong-magenta',
+		'color' => '#8C1B64',
+	),
+	array(
+		'name' => __( 'red', 'aadfc' ),
+		'slug' => 'red',
+		'color' => '#E92640',
+	),
+	array(
+		'name' => __( 'orange', 'aadfc' ),
+		'slug' => 'orange',
+		'color' => '#FF7549',
+	),
+	array(
+		'name' => __( 'yellow', 'aadfc' ),
+		'slug' => 'yellow',
+		'color' => '#F2B705',
+	),
+) );
+add_theme_support( 'wp-block-styles' );
+
 	// html5 support
 	add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption'));
 
@@ -88,75 +123,4 @@ foreach ( $aadfc_includes as $file ) {
 	}
 	require_once $filepath;
 }
-
-//Register Custom Post type
- function create_post_type_events(){
-		// creates label names for the post type in the dashboard the post panel and in the toolbar.
-			$labels = array(
-				'name' => __('Events'),
-				'singular_name' => __('Event'),
-				'add_new' => 'New Event',
-				'add_new_item'=> 'Add New Event',
-				'edit_item' => 'Edit Event',
-				'featured_image'        => _x( 'Event Post Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' ),
-				'set_featured_image'    => _x( 'Set cover image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
-				'remove_featured_image' => _x( 'Remove cover image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
-				'use_featured_image'    => _x( 'Use as cover image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
-	
-			);
-			// creates the post functionality that you want for a full listing
-			$args = array(
-				'labels' => $labels,
-				'public' => true,
-				'has_archive' => true,
-				'rewrite' => array('slug' => 'events'),
-				'menu_position' => 30,
-				'menu_icon' => 'dashicons-buddicons-groups',
-				'capability_type'    => 'page',
-				'taxonomies' => array('category', 'post_tag'),
-				'supports'=> array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields'),
-			);
-	
-			register_post_type('events', $args  );
-		}
-		// Hooking up our function to theme setup
-add_action('init', 'create_post_type_events');
-		// post pagination
-		function page_pagination_nav(){
-			global $wp_query;
-
-			$total_pages = $wp_query->max_num_pages;
-
-			if($total_pages > 1){
-				$current_page = max(1, get_query_var('paged'));
-				echo paginate_links(array(
-					'base' => get_pagenum_link(1) . '%_%',
-					'format' => '/page/%#%',
-					'current' => $current_page,
-					'total' => $total_pages,
-				));
-			}
-		}
-		function pagination_nav(){
-			global $wp_query;
-			?>
-<nav class="pagination" role="navigation">
-    <div class="previous-post-nav"><?php previous_post_link( '%link', '&larr; Older posts');?></div>
-    <div class="next-post-nav"><?php next_post_link( '%link', 'Newer posts &rarr;');?></div>
-</nav>
-<?php
-		}
-		add_filter( 'pre_get_posts', 'slug_cpt_category_archives');
-		function slug_cpt_category_archives($query){
-			if ($query->is_category() && $query->is_main_query()){
-				$query->set('post_type',
-					array(
-						'post', 
-						'events', 
-						'gallery'
-					)
-				);
-			}
-		}
-		return $query;
 
