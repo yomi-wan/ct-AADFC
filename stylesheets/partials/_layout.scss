@@ -5,7 +5,9 @@ html {
 }
 body {
   background-color: $background-color;
-  background: transparent linear-gradient(163deg, #241E46 0%, #1F2A5C 67%, #30376A 100%) 0% 0% no-repeat padding-box;
+  background: transparent
+    linear-gradient(163deg, #241e46 0%, #1f2a5c 67%, #30376a 100%) 0% 0%
+    no-repeat padding-box;
   color: $text-dark;
   font-size: $bodyFont;
   min-width: 320px;
@@ -13,7 +15,7 @@ body {
 }
 
 // single event posts
-// TODO change this for the events calendar
+// TODO change this for the events calendar if possible
 
 .events-front-page a {
   color: $text-light;
@@ -51,7 +53,6 @@ body {
 //   background-color: transparent;
 // }
 
-
 // home page
 section {
   margin-bottom: $lg-space;
@@ -78,12 +79,9 @@ section.bg-white {
   }
 }
 // sign up form
-.mc4wp-form-113{
-
+.mc4wp-form-113 {
 }
-
-
-
+// events page
 
 @media only screen and (min-width: 700px) {
   .wwedo {
@@ -93,10 +91,21 @@ section.bg-white {
       border: 10px solid #ffffff;
       width: 200px;
     }
-    img{
+    img {
       margin: 35px auto;
     }
   }
-
-
-}//end of media query
+} //end of media query
+@media only screen and (min-width: 768px) {
+  article.mec-event-article.mec-toggle-202011-155
+    .mec-event-list-modern
+    .col-md-6.col-sm-6 {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    .col-md-2.col-sm-2 {
+      position: block;
+      top: 20px;
+    }
+  }
+}

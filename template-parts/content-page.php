@@ -13,7 +13,7 @@
 
         <header class="entry-header">
             <!-- //get the page title -->
-            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
         </header><!-- .entry-header -->
 
         <!-- if you have an image it will display wordpress largest default thumbnail (see settins in admin for sizing). -->

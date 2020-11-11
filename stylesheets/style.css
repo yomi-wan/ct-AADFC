@@ -6,7 +6,7 @@ html {
 
 body {
   background-color: #241E46;
-  background: transparent linear-gradient(163deg, #241E46 0%, #1F2A5C 67%, #30376A 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(163deg, #241e46 0%, #1f2a5c 67%, #30376a 100%) 0% 0% no-repeat padding-box;
   color: #0D0D0D;
   font-size: 1.8rem;
   min-width: 320px;
@@ -56,6 +56,22 @@ section.bg-white h2 {
   }
   .wwedo img {
     margin: 35px auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  article.mec-event-article.mec-toggle-202011-155
+.mec-event-list-modern
+.col-md-6.col-sm-6 {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  article.mec-event-article.mec-toggle-202011-155
+.mec-event-list-modern
+.col-md-6.col-sm-6 .col-md-2.col-sm-2 {
+    position: block;
+    top: 20px;
   }
 }
 
