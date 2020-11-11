@@ -80,8 +80,31 @@ section.bg-white {
 }
 // sign up form
 .mc4wp-form-113 {
+  color: #fff;
+  .form-row{
+    margin-bottom: $sm-space;
+
+  }
+  input.form-control{
+    border: none;
+    border-bottom: 3px solid #fff;
+    background: none;
+    color: #fff;
+  }
+  input.primary-btn {
+    border: none;
+    padding: 1.1rem 2rem;
+    margin-bottom: $md-space;
+  }
 }
+
 // events page
+.alert-bubble{
+  background-color: $yellow;
+  color: $text-dark;
+  border-radius: 100% 100% 100% 0;
+  padding: 1rem;
+}
 
 @media only screen and (min-width: 700px) {
   .wwedo {
@@ -97,15 +120,5 @@ section.bg-white {
   }
 } //end of media query
 @media only screen and (min-width: 768px) {
-  article.mec-event-article.mec-toggle-202011-155
-    .mec-event-list-modern
-    .col-md-6.col-sm-6 {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    .col-md-2.col-sm-2 {
-      position: block;
-      top: 20px;
-    }
-  }
+
 }

@@ -47,6 +47,34 @@ section.bg-white h2 {
   margin: 0 auto;
 }
 
+.mc4wp-form-113 {
+  color: #fff;
+}
+
+.mc4wp-form-113 .form-row {
+  margin-bottom: 2.4rem;
+}
+
+.mc4wp-form-113 input.form-control {
+  border: none;
+  border-bottom: 3px solid #fff;
+  background: none;
+  color: #fff;
+}
+
+.mc4wp-form-113 input.primary-btn {
+  border: none;
+  padding: 1.1rem 2rem;
+  margin-bottom: 4.8rem;
+}
+
+.alert-bubble {
+  background-color: #F2B705;
+  color: #0D0D0D;
+  border-radius: 100% 100% 100% 0;
+  padding: 1rem;
+}
+
 @media only screen and (min-width: 700px) {
   .wwedo div:first-child {
     background-color: #FF7549;
@@ -56,22 +84,6 @@ section.bg-white h2 {
   }
   .wwedo img {
     margin: 35px auto;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  article.mec-event-article.mec-toggle-202011-155
-.mec-event-list-modern
-.col-md-6.col-sm-6 {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  article.mec-event-article.mec-toggle-202011-155
-.mec-event-list-modern
-.col-md-6.col-sm-6 .col-md-2.col-sm-2 {
-    position: block;
-    top: 20px;
   }
 }
 
@@ -321,7 +333,6 @@ footer a:hover {
 
 .footer-container aside:first-of-type {
   background-color: #8c1b64;
-  height: 312px;
 }
 
 .footer-container aside:first-of-type h3 {
@@ -365,8 +376,8 @@ footer a:hover {
   padding: 1.1rem 0;
   width: 16.7rem;
   text-align: center;
-  -webkit-box-shadow: 0px 3px 6px #0D0D0D;
-          box-shadow: 0px 3px 6px #0D0D0D;
+  -webkit-box-shadow: 0px 3px 6px #0D0D0D74;
+          box-shadow: 0px 3px 6px #0D0D0D74;
 }
 
 .primary-btn a {
@@ -396,10 +407,6 @@ footer a:hover {
 
 .secondary-btn:hover a {
   color: #fff;
-}
-
-div.contact-content {
-  background-color: #FF7549;
 }
 
 .nf-form-title h3 {

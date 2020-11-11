@@ -14,9 +14,17 @@
 
 <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 
-    <div class="events-content text-white">
-        <?php the_content(); ?>
-        <!-- display events page content -->
+    <div class="events-content text-white row">
+       <div class="col-12 col-md-8">
+            <?php the_content(); ?>
+            <!-- display events page content -->
+       </div>
+       
+  
+     <div class="col-md-3 alert-bubble"><?php the_field('covid_alert');?></div>
+   
+    
+       
     </div>
 
     <div class="bg-white">
