@@ -29,7 +29,6 @@
 
     <div class="bg-white">
         <?php echo do_shortcode('[MEC id="155"]'); ?>
-    
     </div>
 
 </div>
