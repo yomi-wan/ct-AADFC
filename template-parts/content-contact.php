@@ -10,7 +10,7 @@
  */
 ?>
 <main <?php post_class();?> id="post-<?php the_ID();?>">
-<div class="container bg-white">
+<div class="container">
 
     <div class="contact-content">
                     <!-- display about us page content -->

@@ -96,10 +96,15 @@ section.bg-white {
     margin-bottom: $md-space;
   }
 }
-.entry-content ul{
-  display: flex;
-  flex-wrap: wrap;
-  margin: $lg-space 0 $sm-space;
+.entry-content{
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: $lg-space 0 $sm-space;
+  }
+  img{
+    margin: 0 auto;
+  }
 }
 
 // events page

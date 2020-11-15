@@ -71,6 +71,28 @@
       }
     }
   }
+  .entry-content{
+    ul{
+      max-width: 33rem;
+    }
+ 
+  }
+  .community.bg-white{
+      border-radius: 0 100% 100% 100%;
+      position: relative;
+      p{
+          max-width: 47rem;
+      }
+
+      .entry-content p:last-of-type{
+        position: absolute;
+        bottom: 0;
+        right: 4%;
+      }
+  }
+
+
+
 } //end of medium query
 
 // large screens
