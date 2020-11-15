@@ -262,6 +262,12 @@ footer a:hover {
   text-transform: capitalize;
 }
 
+.footer-container aside:nth-of-type(2) li {
+  float: left;
+  display: inline;
+  width: 50%;
+}
+
 .footer-container ul li {
   line-height: 2;
 }
@@ -288,6 +294,17 @@ footer a:hover {
 
 .primary-btn a {
   color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.primary-btn:hover {
+  background-color: #241E46;
+  border: 3px solid #FF7549;
+}
+
+.primary-btn:hover a {
+  color: #FF7549;
 }
 
 .secondary-btn {
@@ -296,7 +313,7 @@ footer a:hover {
   text-align: center;
   padding: 1.1rem 0;
   width: 16.7rem;
-  margin: 7.2rem auto;
+  margin: 2.4rem auto 7.2rem auto;
 }
 
 .secondary-btn a {
@@ -389,8 +406,19 @@ footer a:hover {
   .footer-container aside {
     padding: 4.8rem;
   }
-  .footer-container asideaside:first-of-type {
+  .footer-container aside:first-of-type {
     text-align: right;
+  }
+  .footer-container aside:first-of-type .primary-btn {
+    margin-bottom: 0;
+  }
+  .footer-container aside:nth-of-type(2) {
+    padding-bottom: 108px;
+  }
+  .footer-container aside.widget_text {
+    position: absolute;
+    right: 0;
+    padding-top: 0;
   }
   .entry-content ul {
     max-width: 33rem;

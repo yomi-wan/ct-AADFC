@@ -1,5 +1,4 @@
 @media only screen and (min-width: 700px) {
-
 } //end of media query
 
 // medium screens
@@ -33,32 +32,32 @@
       text-shadow: 2px 0px 4px $background-color;
     }
   }
-  .what-wrapper{
-      height: 24rem;
+  .what-wrapper {
+    height: 24rem;
   }
   .wwedo {
     position: absolute;
     top: -18rem;
-  div:first-child {
-    background-color: $yellow;
-    border-radius: 100%;
-    border: 10px solid #ffffff;
-    width: 20rem;
-    height: 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  &.culture div:first-child {
-    background-color: $orange;
-  }
-  &.volunteer div:first-child {
-    background-color: $purple;
-  }
-  img{
+    div:first-child {
+      background-color: $yellow;
+      border-radius: 100%;
+      border: 10px solid #ffffff;
+      width: 20rem;
+      height: 20rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &.culture div:first-child {
+      background-color: $orange;
+    }
+    &.volunteer div:first-child {
+      background-color: $purple;
+    }
+    img {
       margin: 35px auto;
+    }
   }
-}
   .footer-container {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -66,33 +65,40 @@
     aside {
       padding: $md-space;
 
-      &aside:first-of-type {
+      &:first-of-type {
         text-align: right;
+        .primary-btn{
+            margin-bottom: 0;
+        }
+      }
+      &:nth-of-type(2) {
+        padding-bottom: 108px;
+      }
+      &.widget_text {
+        position: absolute;
+        right: 0;
+        padding-top: 0;
       }
     }
   }
-  .entry-content{
-    ul{
+  .entry-content {
+    ul {
       max-width: 33rem;
     }
- 
   }
-  .community.bg-white{
-      border-radius: 0 100% 100% 100%;
-      position: relative;
-      p{
-          max-width: 47rem;
-      }
+  .community.bg-white {
+    border-radius: 0 100% 100% 100%;
+    position: relative;
+    p {
+      max-width: 47rem;
+    }
 
-      .entry-content p:last-of-type{
-        position: absolute;
-        bottom: 0;
-        right: 4%;
-      }
+    .entry-content p:last-of-type {
+      position: absolute;
+      bottom: 0;
+      right: 4%;
+    }
   }
-
-
-
 } //end of medium query
 
 // large screens
@@ -137,7 +143,6 @@
     left: calc(50% - 8px);
   }
 } //end of large query
-
 
 // xl screens
 @media (min-width: 1200px) {
