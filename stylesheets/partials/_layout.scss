@@ -83,7 +83,6 @@ section.bg-white {
   color: #fff;
   .form-row{
     margin-bottom: $sm-space;
-
   }
   input.form-control{
     border: none;
@@ -96,6 +95,11 @@ section.bg-white {
     padding: 1.1rem 2rem;
     margin-bottom: $md-space;
   }
+}
+.entry-content ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: $lg-space 0 $sm-space;
 }
 
 // events page

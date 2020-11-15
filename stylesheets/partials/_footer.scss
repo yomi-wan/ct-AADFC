@@ -1,50 +1,48 @@
 /* footer */
-footer{
-    background-color:$background-color;
+footer {
+  background-color: $background-color;
+  color: $orange;
+  font-size: $xsFont;
+  padding: $xs-space 0;
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  a {
     color: $orange;
-    font-size: $xsFont;
-    padding: $xs-space 0;
-    p{
-        padding: 0;
-        margin: 0;
+    &:hover {
+      color: $red;
     }
-    a{
-        color: $orange;
-        &:hover{
-            color: $red;
-        }
-    }
+  }
 }
-.footer-container{
-    margin-top: $xl-space;
-    aside{
+.footer-container {
+  margin-top: $xl-space;
+  aside {
     padding: $md-space 10px;
     background-color: $yellow;
     color: $text-light;
-    h3{
-        color: $text-light;
+    h3 {
+      color: $text-light;
     }
 
-    &:first-of-type{
-        background-color: $purple;
-        h3{
-            text-transform: capitalize;
-        }
+    &:first-of-type {
+      background-color: $purple;
+      h3 {
+        text-transform: capitalize;
+      }
     }
-    }
-    ul {
-        li{
-            line-height: 2;
-           a{
+  }
+  ul {
+    li {
+      line-height: 2;
+      a {
         font-family: $headingFont;
         text-transform: uppercase;
         color: $text-dark;
-        &:hover{
-            color: $red;
+        &:hover {
+          color: $red;
         }
-        } 
-        } 
+      }
     }
-    
+  }
 }
-

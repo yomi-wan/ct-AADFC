@@ -19,10 +19,10 @@
                 <?php get_template_part('template-parts/content', 'banner'); ?>
 <div class="banner-image"></div>
     </div>
-    <section class="bg-white">
+    <section class="bg-white what-wrapper">
         <!-- what we do section start -->
         <div class="container">
-            <h2><?php the_field('what_heading'); ?> <div class="ball"></div>
+            <h2 class="d-md-none"><?php the_field('what_heading'); ?> <div class="ball"></div>
             </h2>
             <div class="row">
                 <div class="col-12 col-md-4">

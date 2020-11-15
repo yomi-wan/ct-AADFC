@@ -30,11 +30,15 @@
     }
     .banner p {
       z-index: 2;
+      text-shadow: 2px 0px 4px $background-color;
     }
+  }
+  .what-wrapper{
+      height: 24rem;
   }
   .wwedo {
     position: absolute;
-    top: -25rem;
+    top: -18rem;
   div:first-child {
     background-color: $yellow;
     border-radius: 100%;

@@ -68,6 +68,15 @@ section.bg-white h2 {
   margin-bottom: 4.8rem;
 }
 
+.entry-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 7.2rem 0 2.4rem;
+}
+
 .alert-bubble {
   background-color: #F2B705;
   color: #0D0D0D;
@@ -104,6 +113,12 @@ h2 {
 
 h3 {
   font-size: 2.4rem;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  max-width: 70ch;
 }
 
 .banner p {
@@ -148,24 +163,20 @@ nav a:hover {
   border-radius: 100%;
 }
 
-.community ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.entry-content p {
+  margin-bottom: 2.4rem;
 }
 
-.community ul li {
+.entry-content ul li {
   line-height: 2;
 }
 
-.community ul li a {
-  -webkit-box-shadow: inset 0 -1rem 0 0 #F2B705;
-          box-shadow: inset 0 -1rem 0 0 #F2B705;
+.entry-content ul li a {
+  -webkit-box-shadow: inset 0 -1.15rem 0 0 #F2B705;
+          box-shadow: inset 0 -1.15rem 0 0 #F2B705;
 }
 
-.community ul li a:hover {
+.entry-content ul li a:hover {
   background: none;
 }
 
@@ -324,10 +335,14 @@ footer a:hover {
   }
   div.content-banner .banner p {
     z-index: 2;
+    text-shadow: 2px 0px 4px #241E46;
+  }
+  .what-wrapper {
+    height: 24rem;
   }
   .wwedo {
     position: absolute;
-    top: -25rem;
+    top: -18rem;
   }
   .wwedo div:first-child {
     background-color: #F2B705;

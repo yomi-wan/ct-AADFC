@@ -26,6 +26,11 @@ h2 {
 h3 {
   font-size: $mH3;
 }
+p {
+  margin: 0;
+  padding: 0;
+  max-width: 70ch;
+}
 .banner p {
   font-size: $mBannerFont;
   color: $orange;
@@ -61,19 +66,20 @@ nav a {
   background-color: $red;
   border-radius: 100%;
 }
-.community ul {
-  display: flex;
-  flex-wrap: wrap;
-  li {
-    line-height: 2;
+.entry-content {
+  p {
+    margin-bottom: 2.4rem;
+  }
+  ul {
+    li {
+      line-height: 2;
 
-    a {
-      box-shadow: inset 0 -1rem 0 0 $yellow;
-
-      &:hover {
-        background: none;
+      a {
+        box-shadow: inset 0 -1.15rem 0 0 $yellow;
+        &:hover {
+          background: none;
+        }
       }
     }
   }
 }
-
