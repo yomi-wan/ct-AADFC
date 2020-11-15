@@ -51,7 +51,7 @@
                     <?php if (have_rows('volunteer')): ?>
                     <?php while (have_rows('volunteer')):  the_row();?>
                     <div class="wwedo volunteer d-flex flex-md-column">
-                        <div class="col-6"><img src="<?php the_sub_field('image');?>" alt="volunteer icon"></div>
+                        <div class="col-6 col-md-12"><img src="<?php the_sub_field('image');?>" alt="volunteer icon"></div>
                         <?php the_sub_field('text');?>
                     </div>
                     <?php endwhile; ?>

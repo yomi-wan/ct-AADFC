@@ -1,0 +1,122 @@
+@media only screen and (min-width: 700px) {
+
+} //end of media query
+
+// medium screens
+@media (min-width: 768px) {
+  div.content-banner {
+    background: #241e46;
+    background-color: transparent;
+    background-image: none;
+    display: flex;
+    height: 420px;
+    overflow: hidden;
+    padding: 0;
+
+    .banner-image {
+      position: absolute;
+      top: -10%;
+      left: 45%;
+      width: 70vw;
+      height: 70vw;
+      border-radius: 100%;
+      overflow: hidden;
+      z-index: -1;
+      background: transparent;
+      background-image: url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .banner p {
+      z-index: 2;
+    }
+  }
+  .wwedo {
+    position: absolute;
+    top: -25rem;
+  div:first-child {
+    background-color: $yellow;
+    border-radius: 100%;
+    border: 10px solid #ffffff;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &.culture div:first-child {
+    background-color: $orange;
+  }
+  &.volunteer div:first-child {
+    background-color: $purple;
+  }
+  img{
+      margin: 35px auto;
+  }
+}
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    aside {
+      padding: $md-space;
+
+      &aside:first-of-type {
+        text-align: right;
+      }
+    }
+  }
+} //end of medium query
+
+// large screens
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: $h1;
+  }
+  .banner p {
+    font-size: $bannerFont;
+  }
+  h2 {
+    font-size: $h2;
+  }
+  h3 {
+    font-size: $h3;
+  }
+
+  nav a {
+    color: $purple;
+  }
+  .collapse:not(.show) {
+    display: block;
+  }
+  div.site-logo img {
+    width: 10rem;
+    height: 100%;
+  }
+  div.content-banner {
+    height: 600px;
+    .banner p {
+      font-size: 72px;
+    }
+  }
+  li.current_page_item a.nav-link::before {
+    content: "";
+    position: relative;
+    top: -15px;
+    background: $red;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    left: calc(50% - 8px);
+  }
+} //end of large query
+
+
+// xl screens
+@media (min-width: 1200px) {
+  .banner-image {
+    max-width: 892px;
+    max-height: 892px;
+  }
+}

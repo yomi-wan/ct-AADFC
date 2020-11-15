@@ -106,19 +106,3 @@ section.bg-white {
   padding: 1rem;
 }
 
-@media only screen and (min-width: 700px) {
-  .wwedo {
-    div:first-child {
-      background-color: $orange;
-      border-radius: 100%;
-      border: 10px solid #ffffff;
-      width: 200px;
-    }
-    img {
-      margin: 35px auto;
-    }
-  }
-} //end of media query
-@media only screen and (min-width: 768px) {
-
-}

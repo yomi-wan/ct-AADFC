@@ -75,18 +75,6 @@ section.bg-white h2 {
   padding: 1rem;
 }
 
-@media only screen and (min-width: 700px) {
-  .wwedo div:first-child {
-    background-color: #FF7549;
-    border-radius: 100%;
-    border: 10px solid #ffffff;
-    width: 200px;
-  }
-  .wwedo img {
-    margin: 35px auto;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -181,24 +169,6 @@ nav a:hover {
   background: none;
 }
 
-@media only screen and (min-width: 992px) {
-  h1 {
-    font-size: 2.4rem;
-  }
-  .banner p {
-    font-size: 7.57rem;
-  }
-  h2 {
-    font-size: 5.68rem;
-  }
-  h3 {
-    font-size: 4.26rem;
-  }
-  nav a {
-    color: #8c1b64;
-  }
-}
-
 nav {
   background: #fff;
   padding: 1rem;
@@ -227,73 +197,6 @@ div.content-banner {
   background-repeat: no-repeat;
   padding-top: 12rem;
   position: relative;
-}
-
-@media (min-width: 768px) {
-  /* md */
-  div.content-banner {
-    background: #241E46;
-    background-color: transparent;
-    background-image: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 420px;
-    overflow: hidden;
-    padding: 0;
-  }
-  div.content-banner .banner-image {
-    position: absolute;
-    top: -10%;
-    left: 45%;
-    width: 70vw;
-    height: 70vw;
-    border-radius: 100%;
-    overflow: hidden;
-    z-index: -1;
-    background: transparent;
-    background-image: url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  div.content-banner .banner p {
-    z-index: 2;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .collapse:not(.show) {
-    display: block;
-  }
-  div.site-logo img {
-    width: 10rem;
-    height: 100%;
-  }
-  div.content-banner {
-    height: 600px;
-  }
-  div.content-banner .banner p {
-    font-size: 72px;
-  }
-  li.current_page_item a.nav-link::before {
-    content: "";
-    position: relative;
-    top: -15px;
-    background: #E92640;
-    width: 1.2rem;
-    height: 1.2rem;
-    border-radius: 100%;
-    left: calc(50% - 8px);
-  }
-}
-
-@media (min-width: 1200px) {
-  /* xl screens */
-  .banner-image {
-    max-width: 892px;
-    max-height: 892px;
-  }
 }
 
 /* footer */
@@ -353,23 +256,6 @@ footer a:hover {
   color: #E92640;
 }
 
-@media screen and (min-width: 768px) {
-  .footer-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .footer-container aside {
-    padding: 4.8rem;
-  }
-  .footer-container asideaside:first-of-type {
-    text-align: right;
-  }
-}
-
 .primary-btn {
   background-color: #FF7549;
   border-radius: 100px;
@@ -409,25 +295,126 @@ footer a:hover {
   color: #fff;
 }
 
-.nf-form-title h3 {
-  color: #fff;
-  font-family: "Oswald", sans-serif;
-  font-size: 2.4rem;
+@media (min-width: 768px) {
+  div.content-banner {
+    background: #241e46;
+    background-color: transparent;
+    background-image: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 420px;
+    overflow: hidden;
+    padding: 0;
+  }
+  div.content-banner .banner-image {
+    position: absolute;
+    top: -10%;
+    left: 45%;
+    width: 70vw;
+    height: 70vw;
+    border-radius: 100%;
+    overflow: hidden;
+    z-index: -1;
+    background: transparent;
+    background-image: url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  div.content-banner .banner p {
+    z-index: 2;
+  }
+  .wwedo {
+    position: absolute;
+    top: -25rem;
+  }
+  .wwedo div:first-child {
+    background-color: #F2B705;
+    border-radius: 100%;
+    border: 10px solid #ffffff;
+    width: 20rem;
+    height: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wwedo.culture div:first-child {
+    background-color: #FF7549;
+  }
+  .wwedo.volunteer div:first-child {
+    background-color: #8c1b64;
+  }
+  .wwedo img {
+    margin: 35px auto;
+  }
+  .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .footer-container aside {
+    padding: 4.8rem;
+  }
+  .footer-container asideaside:first-of-type {
+    text-align: right;
+  }
 }
 
-div.nf-form-content label {
-  font-size: 1.8rem;
-  color: #FF7549;
-  font-family: "Oswald", sans-serif;
-  font-weight: normal;
-  line-height: 1.8rem;
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  .banner p {
+    font-size: 7.57rem;
+  }
+  h2 {
+    font-size: 5.68rem;
+  }
+  h3 {
+    font-size: 4.26rem;
+  }
+  nav a {
+    color: #8c1b64;
+  }
+  .collapse:not(.show) {
+    display: block;
+  }
+  div.site-logo img {
+    width: 10rem;
+    height: 100%;
+  }
+  div.content-banner {
+    height: 600px;
+  }
+  div.content-banner .banner p {
+    font-size: 72px;
+  }
+  li.current_page_item a.nav-link::before {
+    content: "";
+    position: relative;
+    top: -15px;
+    background: #E92640;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    left: calc(50% - 8px);
+  }
 }
 
-div.nf-form-content input {
-  border-radius: 1rem !important;
-}
-
-div.nf-form-content textarea {
-  border-radius: 1rem !important;
+@media (min-width: 1200px) {
+  .banner-image {
+    max-width: 892px;
+    max-height: 892px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
