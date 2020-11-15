@@ -57,6 +57,7 @@ section.bg-white h2 {
 
 .mc4wp-form-113 input.form-control {
   border: none;
+  border-radius: unset;
   border-bottom: 3px solid #fff;
   background: none;
   color: #fff;

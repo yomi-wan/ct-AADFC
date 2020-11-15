@@ -86,9 +86,11 @@ section.bg-white {
   }
   input.form-control{
     border: none;
+    border-radius: unset;
     border-bottom: 3px solid #fff;
     background: none;
     color: #fff;
+
   }
   input.primary-btn {
     border: none;

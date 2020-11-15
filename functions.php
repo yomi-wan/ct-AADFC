@@ -1,6 +1,5 @@
 <?php 
 
-
    
 //this function will add all of your styles and scripts, everything from Google Fonts to resets.
 function aadfc_enqueue_styles() {
@@ -15,7 +14,7 @@ function aadfc_enqueue_styles() {
   //scripts
   	//bootstrap script
 	wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets//js/bootstrap.bundle.min.js', array('jquery'), 1.1, true);
-   //wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
+   wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
 }
 add_action('wp_enqueue_scripts', 'aadfc_enqueue_styles');
 

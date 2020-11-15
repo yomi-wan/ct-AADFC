@@ -22,8 +22,7 @@
     <section class="bg-white what-wrapper">
         <!-- what we do section start -->
         <div class="container">
-            <h2 class="d-md-none"><?php the_field('what_heading'); ?> <div class="ball"></div>
-            </h2>
+            <h2 class="d-md-none"><?php the_field('what_heading'); ?></h2>
             <div class="row">
                 <div class="col-12 col-md-4">
                     <?php if (have_rows('community')): ?>
@@ -65,8 +64,7 @@
     <section class="container">
         <!-- event section start -->
 
-        <h2><?php the_field('events_heading'); ?> <div class="ball"></div>
-        </h2>
+        <h2><?php the_field('events_heading'); ?></h2>
         <!-- custom event posts -->
         <?php 
                 $args = array( 'post_type' => 'events', 'posts_per_page' => 3 );
@@ -87,8 +85,7 @@
         <!-- aadfc community section -->
         <div class="container">
 
-            <h2><?php the_field('community_heading'); ?><div class="ball"></div>
-            </h2>
+            <h2><?php the_field('community_heading'); ?></h2>
             <div class="entry-content">
                 <!-- display page or post content -->
                 <?php 
@@ -105,8 +102,7 @@
     <section class="container">
         <!-- aadfc sponsors section -->
 
-        <h3><?php the_field('sponsors_heading'); ?> <div class="ball"></div>
-        </h3>
+        <h3><?php the_field('sponsors_heading'); ?></h3>
 
     </section> <!-- end of sponsors section -->
 
