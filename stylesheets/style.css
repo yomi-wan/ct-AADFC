@@ -484,8 +484,14 @@ footer a:hover {
     max-width: 65rem;
   }
   .community.bg-white .entry-content p:last-of-type {
-    right: 10%;
-    bottom: 20%;
+    right: 8%;
+    bottom: 10%;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  .community.bg-white .entry-content p:last-of-type img {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
   }
 }
 
@@ -493,6 +499,15 @@ footer a:hover {
   .banner-image {
     max-width: 892px;
     max-height: 892px;
+  }
+  .community.bg-white .entry-content p:last-of-type {
+    bottom: 20%;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  .community.bg-white .entry-content p:last-of-type img {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
   }
 }
 /*# sourceMappingURL=style.css.map */

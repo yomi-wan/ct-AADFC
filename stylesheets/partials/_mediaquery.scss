@@ -98,6 +98,7 @@
       position: absolute;
       bottom: 0;
       right: 4%;
+      
     }
   }
 } //end of medium query
@@ -151,8 +152,10 @@
     }
 
     .entry-content p:last-of-type {
-      right: 10%;
-      bottom: 20%;
+      right: 8%;
+      bottom: 10%;
+      transition: all .2s ease-in-out; 
+      img { transform: scale(1.4); }
     }
   }
 
@@ -165,4 +168,13 @@
     max-width: 892px;
     max-height: 892px;
   }
+  .community.bg-white {
+
+    .entry-content p:last-of-type {
+      bottom: 20%;
+      transition: all .2s ease-in-out; 
+      img { transform: scale(1.6); }
+    }
+  }
+
 }
