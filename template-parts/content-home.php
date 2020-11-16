@@ -81,9 +81,9 @@
 
     </section><!-- end of events -->
 
-    <section class="community bg-white">
+    <section class="community container-fluid container-lg bg-white">
         <!-- aadfc community section -->
-        <div class="container">
+        <div class="">
 
             <h2><?php the_field('community_heading'); ?></h2>
             <div class="entry-content">
@@ -91,7 +91,7 @@
                 <?php 
                             the_content(); 
                         
-                        ?>
+                ?>
 
 
             </div>
@@ -103,6 +103,7 @@
         <!-- aadfc sponsors section -->
 
         <h3><?php the_field('sponsors_heading'); ?></h3>
+        <?php echo do_shortcode('[sp_wpcarousel id="179"]'); ?>
 
     </section> <!-- end of sponsors section -->
 

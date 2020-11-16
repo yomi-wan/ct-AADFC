@@ -84,6 +84,7 @@
   .entry-content {
     ul {
       max-width: 33rem;
+      margin-left: 9rem;
     }
   }
   .community.bg-white {
@@ -142,6 +143,20 @@
     border-radius: 100%;
     left: calc(50% - 8px);
   }
+  .community.bg-white {
+    padding: 9.6rem 0 24rem 2.4rem;
+
+    p {
+      max-width: 65rem;
+    }
+
+    .entry-content p:last-of-type {
+      right: 10%;
+      bottom: 20%;
+    }
+  }
+
+
 } //end of large query
 
 // xl screens
