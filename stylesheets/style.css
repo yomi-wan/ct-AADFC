@@ -85,8 +85,21 @@ section.bg-white h2 {
 .alert-bubble {
   background-color: #F2B705;
   color: #0D0D0D;
-  border-radius: 100% 100% 100% 0;
-  padding: 1rem;
+  border-radius: 0 5.8rem 5.8rem 5.8rem;
+  padding: 2.4rem;
+  text-align: center;
+}
+
+main.post-30 {
+  margin-top: 2.4rem;
+}
+
+main.post-30 .events-content {
+  margin-bottom: 7.2rem;
+}
+
+main.post-30 .events-content div:first-of-type {
+  margin-bottom: 7.2rem;
 }
 
 h1,
@@ -126,6 +139,10 @@ p {
   max-width: 70ch;
 }
 
+main p {
+  margin-bottom: 2.4rem;
+}
+
 .banner p {
   font-size: 6vw;
   color: #FF7549;
@@ -147,6 +164,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: #FF7549;
 }
 
 nav a {
@@ -168,10 +186,6 @@ nav a:hover {
   border-radius: 100%;
 }
 
-.entry-content p {
-  margin-bottom: 2.4rem;
-}
-
 .entry-content ul li {
   line-height: 2;
   text-transform: capitalize;
@@ -187,6 +201,11 @@ nav a:hover {
   color: #F2B705;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+h2.entry-title {
+  text-align: center;
+  font-size: 4.26rem;
 }
 
 nav {
@@ -409,8 +428,16 @@ footer a:hover {
   .footer-container aside:first-of-type {
     text-align: right;
   }
-  .footer-container aside:first-of-type .primary-btn {
+  .footer-container aside:first-of-type div.textwidget {
+    max-width: 450px;
+    margin-left: auto;
+  }
+  .footer-container aside:first-of-type div.textwidget .primary-btn {
     margin-bottom: 0;
+    width: 16.7rem;
+    padding: 1.1rem 0;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
   }
   .footer-container aside:nth-of-type(2) {
     padding-bottom: 108px;
@@ -419,6 +446,10 @@ footer a:hover {
     position: absolute;
     right: 0;
     padding-top: 0;
+  }
+  .footer-container aside.widget_text div.textwidget {
+    max-width: 450px;
+    margin-right: auto;
   }
   .entry-content ul {
     max-width: 33rem;

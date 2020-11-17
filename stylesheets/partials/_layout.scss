@@ -113,7 +113,19 @@ section.bg-white {
 .alert-bubble{
   background-color: $yellow;
   color: $text-dark;
-  border-radius: 100% 100% 100% 0;
-  padding: 1rem;
+  border-radius: 0 5.8rem 5.8rem 5.8rem;
+  padding: $sm-space;
+  text-align: center;
+}
+main.post-30{
+  margin-top: $sm-space;
+  .events-content{
+    margin-bottom: $lg-space;
+    div:first-of-type{
+      margin-bottom: $lg-space;
+    }
+  }
+
+
 }
 

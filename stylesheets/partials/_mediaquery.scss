@@ -67,9 +67,18 @@
 
       &:first-of-type {
         text-align: right;
-        .primary-btn{
+        div.textwidget{
+          max-width: 450px;
+          margin-left: auto;
+          .primary-btn{
             margin-bottom: 0;
+            width: 16.7rem;
+            padding: 1.1rem 0;
+            text-transform: uppercase;
+            font-family: $headingFont;
         }
+        }
+
       }
       &:nth-of-type(2) {
         padding-bottom: 108px;
@@ -78,6 +87,10 @@
         position: absolute;
         right: 0;
         padding-top: 0;
+        div.textwidget{
+          max-width: 450px;
+          margin-right: auto;
+        }
       }
     }
   }

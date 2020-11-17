@@ -31,6 +31,9 @@ p {
   padding: 0;
   max-width: 70ch;
 }
+main p{
+    margin-bottom: $sm-space;
+}
 .banner p {
   font-size: $mBannerFont;
   color: $orange;
@@ -48,6 +51,7 @@ a {
   color: $text-dark;
   &:hover {
     text-decoration: none;
+    color: $orange;
   }
 }
 nav a {
@@ -67,9 +71,6 @@ nav a {
   border-radius: 100%;
 }
 .entry-content {
-  p {
-    margin-bottom: 2.4rem;
-  }
   ul {
     li {
       line-height: 2;
@@ -85,3 +86,9 @@ nav a {
     }
   }
 }
+
+  h2.entry-title{
+    text-align: center;
+    font-size: $h3;
+  }
+
