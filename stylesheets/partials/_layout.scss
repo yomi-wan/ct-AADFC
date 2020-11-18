@@ -17,9 +17,7 @@ body {
 // single event posts
 // TODO change this for the events calendar if possible
 
-.events-front-page a {
-  color: $text-light;
-}
+
 
 // .card-layout {
 //   padding: 0;
@@ -116,6 +114,8 @@ section.bg-white {
   border-radius: 0 5.8rem 5.8rem 5.8rem;
   padding: $sm-space;
   text-align: center;
+  max-width: 43rem;
+  @include smooth;
 }
 main.post-30{
   margin-top: $sm-space;

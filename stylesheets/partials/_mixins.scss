@@ -1,0 +1,11 @@
+@mixin inline-links {
+  box-shadow: inset 0 -1.15rem 0 0 $yellow;
+  &:hover {
+    color: $yellow;
+    box-shadow: none;
+  }
+}
+
+@mixin smooth {
+  transition: all .2s ease-in-out; 
+}

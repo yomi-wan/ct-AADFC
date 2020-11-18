@@ -20,8 +20,8 @@
                 <!-- display events page content -->
                 <?php the_content(); ?>
             </div>
-            <div class="col-md-3">
-                <div class="alert-bubble"><?php the_field('covid_alert');?></div>
+            <div class="col-md-4">
+                <div class="alert-bubble d-flex align-items-center"><?php the_field('covid_alert');?></div>
             </div>
         </div>
     </div>

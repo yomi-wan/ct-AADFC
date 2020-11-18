@@ -37,6 +37,7 @@
   }
   .wwedo {
     position: absolute;
+    max-width: 30.5rem;
     top: -18rem;
     div:first-child {
       background-color: $yellow;
@@ -50,9 +51,15 @@
     }
     &.culture div:first-child {
       background-color: $orange;
+      img {
+        filter: invert(100%);
+      }
     }
     &.volunteer div:first-child {
       background-color: $purple;
+      img {
+        filter: invert(100%);
+      }
     }
     img {
       margin: 35px auto;
@@ -67,18 +74,17 @@
 
       &:first-of-type {
         text-align: right;
-        div.textwidget{
+        div.textwidget {
           max-width: 450px;
           margin-left: auto;
-          .primary-btn{
+          .primary-btn {
             margin-bottom: 0;
             width: 16.7rem;
             padding: 1.1rem 0;
             text-transform: uppercase;
             font-family: $headingFont;
+          }
         }
-        }
-
       }
       &:nth-of-type(2) {
         padding-bottom: 108px;
@@ -87,7 +93,7 @@
         position: absolute;
         right: 0;
         padding-top: 0;
-        div.textwidget{
+        div.textwidget {
           max-width: 450px;
           margin-right: auto;
         }
@@ -111,7 +117,14 @@
       position: absolute;
       bottom: 0;
       right: 4%;
-      
+    }
+  }
+  main.post-30 {
+    .alert-bubble {
+      height: 22.8rem;
+      width: 22.8rem;
+      border-radius: 11.4rem 11.4rem 11.4rem 0;
+      margin: auto;
     }
   }
 } //end of medium query
@@ -134,6 +147,9 @@
   nav a {
     color: $purple;
   }
+  .navbar-nav li{
+    padding-left: $sm-space;
+  }
   .collapse:not(.show) {
     display: block;
   }
@@ -147,6 +163,7 @@
       font-size: 72px;
     }
   }
+  // TODO FIX NAV LINK BALL ABOVE
   li.current_page_item a.nav-link::before {
     content: "";
     position: relative;
@@ -167,12 +184,12 @@
     .entry-content p:last-of-type {
       right: 8%;
       bottom: 10%;
-      transition: all .2s ease-in-out; 
-      img { transform: scale(1.4); }
+      transition: all 0.2s ease-in-out;
+      img {
+        transform: scale(1.4);
+      }
     }
   }
-
-
 } //end of large query
 
 // xl screens
@@ -181,13 +198,19 @@
     max-width: 892px;
     max-height: 892px;
   }
-  .community.bg-white {
 
+  .community.bg-white {
     .entry-content p:last-of-type {
       bottom: 20%;
-      transition: all .2s ease-in-out; 
-      img { transform: scale(1.6); }
+      // transition: all .2s ease-in-out;
+      img {
+        transform: scale(1.5);
+      }
     }
   }
-
+}
+@media (min-width: 1280px){
+  .banner p {
+    margin-left: -8rem;
+  }
 }
