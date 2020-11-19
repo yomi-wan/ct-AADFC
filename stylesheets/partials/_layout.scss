@@ -17,8 +17,6 @@ body {
 // single event posts
 // TODO change this for the events calendar if possible
 
-
-
 // .card-layout {
 //   padding: 0;
 //   background: $purple;
@@ -79,53 +77,57 @@ section.bg-white {
 // sign up form
 .mc4wp-form-113 {
   color: #fff;
-  .form-row{
+  .form-row {
     margin-bottom: $sm-space;
   }
-  input.form-control{
+  input.form-control {
     border: none;
     border-radius: unset;
     border-bottom: 3px solid #fff;
     background: none;
     color: #fff;
-
   }
   input.primary-btn {
-    border: none;
-    padding: 1.1rem 2rem;
-    margin-bottom: $md-space;
+    margin-bottom: 0;
+    width: 16.7rem;
+    text-transform: uppercase;
+    font-family: $headingFont;
+    color: $text-light;
+    &:hover {
+      color: $orange;
+    }
   }
 }
-.entry-content{
-  ul{
+.entry-content {
+  ul {
     display: flex;
     flex-wrap: wrap;
     margin: $lg-space 0 $sm-space;
   }
-  img{
+  img {
     margin: 0 auto;
   }
 }
 
 // events page
-.alert-bubble{
+.alert-bubble {
   background-color: $yellow;
   color: $text-dark;
   border-radius: 0 5.8rem 5.8rem 5.8rem;
   padding: $sm-space;
   text-align: center;
   max-width: 43rem;
-  @include smooth;
+
 }
-main.post-30{
+main.post-30 {
   margin-top: $sm-space;
-  .events-content{
+  .events-content {
     margin-bottom: $lg-space;
-    div:first-of-type{
+    div:first-of-type {
       margin-bottom: $lg-space;
     }
   }
-
-
 }
-
+.events-calendar-container{
+  padding-bottom: $lg-space;
+}

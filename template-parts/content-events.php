@@ -15,8 +15,8 @@
     <div class="container-fluid container-md">
         <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
     
-        <div class="events-content text-white row">
-            <div class="col-12 col-md-8">
+        <div class="events-content text-white row align-items-end justify-content-between">
+            <div class="col-12 col-md-8 col-xl-7">
                 <!-- display events page content -->
                 <?php the_content(); ?>
             </div>
@@ -26,11 +26,11 @@
         </div>
     </div>
 
-    <div class="bg-white container-fluid container-md">
+    <div class="bg-white container-fluid container-lg events-calendar-container">
         <!-- Modern Events Calendar -->
-        <?php echo do_shortcode('[MEC id="155"]'); ?>
+        <?php echo do_shortcode('[MEC id="123"]'); ?>
     </div>
-
+<!-- TODO Add Galleries title and gallery post feed -->
 
 
 </main>

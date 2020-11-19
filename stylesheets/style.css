@@ -60,9 +60,15 @@ section.bg-white h2 {
 }
 
 .mc4wp-form-113 input.primary-btn {
-  border: none;
-  padding: 1.1rem 2rem;
-  margin-bottom: 4.8rem;
+  margin-bottom: 0;
+  width: 16.7rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+}
+
+.mc4wp-form-113 input.primary-btn:hover {
+  color: #FF7549;
 }
 
 .entry-content ul {
@@ -85,8 +91,6 @@ section.bg-white h2 {
   padding: 2.4rem;
   text-align: center;
   max-width: 43rem;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
 }
 
 main.post-30 {
@@ -99,6 +103,10 @@ main.post-30 .events-content {
 
 main.post-30 .events-content div:first-of-type {
   margin-bottom: 7.2rem;
+}
+
+.events-calendar-container {
+  padding-bottom: 7.2rem;
 }
 
 h1,
@@ -207,6 +215,7 @@ nav a:hover {
 
 h2.entry-title {
   text-align: center;
+  margin-top: 2.4rem;
 }
 
 p a {
@@ -297,34 +306,38 @@ footer a:hover {
   text-transform: capitalize;
 }
 
-.footer-container aside:nth-of-type(2) li {
+.footer-container aside:nth-of-type(2) ul li {
+  line-height: 2;
   float: left;
   display: inline;
   width: 50%;
 }
 
-.footer-container ul li {
-  line-height: 2;
-}
-
-.footer-container ul li a {
+.footer-container aside:nth-of-type(2) ul li a {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: #0D0D0D;
 }
 
-.footer-container ul li a:hover {
+.footer-container aside:nth-of-type(2) ul li a:hover {
   color: #E92640;
+}
+
+.footer-container aside:nth-of-type(3) a:hover img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .primary-btn {
   background-color: #FF7549;
+  border: 3px solid #FF7549;
   border-radius: 100px;
   padding: 1.1rem 0;
   width: 16.7rem;
   text-align: center;
-  -webkit-box-shadow: 0px 3px 6px #0D0D0D74;
-          box-shadow: 0px 3px 6px #0D0D0D74;
+  -webkit-box-shadow: 0px 3px 6px #0d0d0d74;
+          box-shadow: 0px 3px 6px #0d0d0d74;
+  margin: 2.4rem auto 7.2rem auto;
 }
 
 .primary-btn a {
@@ -334,8 +347,7 @@ footer a:hover {
 }
 
 .primary-btn:hover {
-  background-color: #241E46;
-  border: 3px solid #FF7549;
+  background-color: unset;
 }
 
 .primary-btn:hover a {
@@ -343,24 +355,38 @@ footer a:hover {
 }
 
 .secondary-btn {
+  background-color: #FF7549;
   border: 3px solid #FF7549;
   border-radius: 100px;
-  text-align: center;
   padding: 1.1rem 0;
   width: 16.7rem;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 6px #0d0d0d74;
+          box-shadow: 0px 3px 6px #0d0d0d74;
   margin: 2.4rem auto 7.2rem auto;
+  background-color: unset;
 }
 
 .secondary-btn a {
-  color: #FF7549;
+  color: #fff;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
 
 .secondary-btn:hover {
+  background-color: unset;
+}
+
+.secondary-btn:hover a {
+  color: #FF7549;
+}
+
+.secondary-btn a {
+  color: #FF7549;
+}
+
+.secondary-btn:hover {
   background-color: #FF7549;
-  -webkit-box-shadow: 0px 3px 6px #0D0D0D;
-          box-shadow: 0px 3px 6px #0D0D0D;
 }
 
 .secondary-btn:hover a {
@@ -375,7 +401,7 @@ footer a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 420px;
+    height: 42rem;
     overflow: hidden;
     padding: 0;
   }
@@ -397,6 +423,9 @@ footer a:hover {
   div.content-banner .banner p {
     z-index: 2;
     text-shadow: 2px 0px 4px #241E46;
+  }
+  h2.entry-title {
+    margin-top: 4.8rem;
   }
   .what-wrapper {
     height: 24rem;
@@ -450,31 +479,13 @@ footer a:hover {
   .footer-container aside {
     padding: 4.8rem;
   }
-  .footer-container aside:first-of-type {
-    text-align: right;
-  }
-  .footer-container aside:first-of-type div.textwidget {
-    max-width: 450px;
-    margin-left: auto;
-  }
-  .footer-container aside:first-of-type div.textwidget .primary-btn {
-    margin-bottom: 0;
-    width: 16.7rem;
-    padding: 1.1rem 0;
-    text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
-  }
   .footer-container aside:nth-of-type(2) {
-    padding-bottom: 108px;
+    padding-bottom: 10.8rem;
   }
   .footer-container aside.widget_text {
     position: absolute;
     right: 0;
     padding-top: 0;
-  }
-  .footer-container aside.widget_text div.textwidget {
-    max-width: 450px;
-    margin-right: auto;
   }
   .entry-content ul {
     max-width: 33rem;
@@ -491,6 +502,9 @@ footer a:hover {
     position: absolute;
     bottom: 0;
     right: 4%;
+  }
+  main.post-30 .events-content div:first-of-type {
+    margin-bottom: 0;
   }
   main.post-30 .alert-bubble {
     height: 22.8rem;
@@ -557,6 +571,17 @@ footer a:hover {
   .community.bg-white .entry-content p:last-of-type img {
     -webkit-transform: scale(1.4);
             transform: scale(1.4);
+  }
+  .footer-container aside div.textwidget {
+    max-width: 450px;
+    margin-right: auto;
+  }
+  .footer-container aside:first-of-type {
+    text-align: right;
+  }
+  .footer-container aside:first-of-type div.textwidget {
+    margin-left: auto;
+    margin-right: 0;
   }
 }
 
