@@ -26,6 +26,10 @@ h2 {
 h3 {
   font-size: $mH3;
 }
+h4.mec-event-title > a.mec-color-hover{
+  color: $text-light !important;
+  font-weight: 400;
+}
 p {
   margin: 0;
   padding: 0;

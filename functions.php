@@ -122,4 +122,46 @@ foreach ( $aadfc_includes as $file ) {
 	}
 	require_once $filepath;
 }
+	// post pagination
+	function page_pagination_nav() {
+		global $wp_query; 
+	 
+		$total_pages = $wp_query->max_num_pages; 
+	 
+		if ($total_pages > 1){
+			$current_page = max(1, get_query_var('paged'));
+	 
+			echo paginate_links(array(
+				'base' => get_pagenum_link(1) . '%_%',
+				'format' => '/page/%#%',
+				'current' => $current_page,
+				'total' => $total_pages,
+			));
+		}
+}
+function  pagination_nav() {
+		global $wp_query;
+		 ?>
+			<nav class="pagination" role="navigation">
+				<div class="previous-post-nav"><?php previous_post_link( '%link', '&larr; Older posts'); ?></div>
+				<div class="next-post-nav"><?php next_post_link( '%link', 'Newer posts &rarr;' ); ?></div>
+			</nav>
+	<?php 
+	}
+	add_filter( 'pre_get_posts', 'slug_cpt_category_archives' );
+
+function slug_cpt_category_archives( $query ) {
+		if ( $query->is_category() && $query->is_main_query()  )  {
+			$query->set( 'post_type',
+				array(
+					'post',
+					'events',
+					'galleries'
+				)
+			);
+		}
+
+		return $query;
+
+}
 

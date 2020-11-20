@@ -140,6 +140,11 @@ h3 {
   font-size: 3.2rem;
 }
 
+h4.mec-event-title > a.mec-color-hover {
+  color: #fff !important;
+  font-weight: 400;
+}
+
 p {
   margin: 0;
   padding: 0;
