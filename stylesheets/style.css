@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;600&display=swap");
+img {
+  width: 100%;
+  height: auto;
+}
+
 html {
   font-size: 0.625rem;
   line-height: 1.5;
@@ -436,16 +441,18 @@ footer a:hover {
     height: 24rem;
   }
   .wwedo {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     position: absolute;
     max-width: 30.5rem;
-    top: -18rem;
+    top: -14rem;
   }
   .wwedo div:first-child {
     background-color: #F2B705;
     border-radius: 100%;
     border: 10px solid #ffffff;
-    width: 20rem;
-    height: 20rem;
+    width: 12rem;
+    height: 12rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -471,7 +478,8 @@ footer a:hover {
             filter: invert(100%);
   }
   .wwedo img {
-    margin: 35px auto;
+    height: 7rem;
+    margin: 15px auto;
   }
   .footer-container {
     -webkit-box-orient: horizontal;
@@ -554,12 +562,26 @@ footer a:hover {
   li.current_page_item a.nav-link::before {
     content: "";
     position: relative;
-    top: -15px;
+    display: inline-block;
+    top: -4rem;
     background: #E92640;
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 100%;
-    left: calc(50% - 8px);
+    left: 50%;
+  }
+  .wwedo {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    top: -18rem;
+  }
+  .wwedo div:first-child {
+    width: 20rem;
+    height: 20rem;
+  }
+  .wwedo img {
+    height: 11rem;
+    margin: 35px auto;
   }
   .community.bg-white {
     padding: 9.6rem 0 24rem 2.4rem;
@@ -577,12 +599,16 @@ footer a:hover {
     -webkit-transform: scale(1.4);
             transform: scale(1.4);
   }
+  .footer-container aside {
+    padding: 4.8rem 12rem;
+  }
   .footer-container aside div.textwidget {
     max-width: 450px;
     margin-right: auto;
   }
-  .footer-container aside:first-of-type {
-    text-align: right;
+  .footer-container aside:first-of-type h3 {
+    max-width: 450px;
+    margin-left: auto;
   }
   .footer-container aside:first-of-type div.textwidget {
     margin-left: auto;

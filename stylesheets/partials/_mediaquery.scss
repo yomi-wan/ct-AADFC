@@ -36,15 +36,16 @@
     height: 24rem;
   }
   .wwedo {
+    @include smooth;
     position: absolute;
     max-width: 30.5rem;
-    top: -18rem;
+    top: -14rem;
     div:first-child {
       background-color: $yellow;
       border-radius: 100%;
       border: 10px solid #ffffff;
-      width: 20rem;
-      height: 20rem;
+      width: 12rem;
+      height: 12rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -62,7 +63,8 @@
       }
     }
     img {
-      margin: 35px auto;
+      height: 7rem;
+      margin: 15px auto;
     }
   }
   .footer-container {
@@ -149,16 +151,29 @@
       font-size: 72px;
     }
   }
-  // TODO FIX NAV LINK BALL ABOVE
+
   li.current_page_item a.nav-link::before {
     content: "";
     position: relative;
-    top: -15px;
+    display: inline-block;
+    top: -4rem;
     background: $red;
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 100%;
-    left: calc(50% - 8px);
+    left: 50%;
+  }
+  .wwedo {
+    @include smooth;
+    top: -18rem;
+    div:first-child {
+      width: 20rem;
+      height: 20rem;
+    }
+    img {
+      height: 11rem;
+      margin: 35px auto;
+    }
   }
   .community.bg-white {
     padding: 9.6rem 0 24rem 2.4rem;
@@ -177,12 +192,16 @@
     }
   }
   .footer-container aside {
+    padding: $md-space $xl-space;
     div.textwidget {
       max-width: 450px;
       margin-right: auto;
     }
     &:first-of-type {
-      text-align: right;
+      h3{
+        max-width: 450px;
+        margin-left: auto;
+      }
       div.textwidget{
         margin-left: auto;
         margin-right: 0;
