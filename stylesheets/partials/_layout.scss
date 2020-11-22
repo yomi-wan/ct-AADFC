@@ -132,3 +132,34 @@ main.post-30 {
 .events-calendar-container{
   padding-bottom: $lg-space;
 }
+.error404,
+main.page{
+  .mec-load-more-button{
+    @include button;
+    padding: unset;
+    color: $text-light;
+    &:hover{
+      color: $orange;
+    }
+  }
+}
+.search-form{
+  max-width: 50rem;
+  margin: 0 auto;
+  input{
+    padding:1rem;
+    border: none;
+    &.search-field{
+    margin-right: -5px;
+    width: 40rem;
+    border-radius: 5px 0 0 5px; 
+    }
+    &.search-submit{
+      border-radius: 0 5px 5px 0;
+      background-color: $orange;
+      border-left: 2px solid $orange;
+      max-width: 10rem;
+    }
+  }
+
+}

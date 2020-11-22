@@ -114,6 +114,66 @@ main.post-30 .events-content div:first-of-type {
   padding-bottom: 7.2rem;
 }
 
+.error404 .mec-load-more-button,
+main.page .mec-load-more-button {
+  background-color: #FF7549;
+  border: 3px solid #FF7549;
+  border-radius: 100px;
+  padding: 1.1rem 0;
+  width: 16.7rem;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 6px #0d0d0d74;
+          box-shadow: 0px 3px 6px #0d0d0d74;
+  margin: 2.4rem auto 7.2rem auto;
+  padding: unset;
+  color: #fff;
+}
+
+.error404 .mec-load-more-button a,
+main.page .mec-load-more-button a {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.error404 .mec-load-more-button:hover,
+main.page .mec-load-more-button:hover {
+  background-color: unset;
+}
+
+.error404 .mec-load-more-button:hover a,
+main.page .mec-load-more-button:hover a {
+  color: #FF7549;
+}
+
+.error404 .mec-load-more-button:hover,
+main.page .mec-load-more-button:hover {
+  color: #FF7549;
+}
+
+.search-form {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.search-form input {
+  padding: 1rem;
+  border: none;
+}
+
+.search-form input.search-field {
+  margin-right: -5px;
+  width: 40rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-form input.search-submit {
+  border-radius: 0 5px 5px 0;
+  background-color: #FF7549;
+  border-left: 2px solid #FF7549;
+  max-width: 10rem;
+}
+
 h1,
 h2,
 h3,
@@ -126,15 +186,18 @@ h6,
   line-height: 1.2;
   padding: 0;
   margin: 0;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #FF7549;
   margin-bottom: 2.4rem;
 }
 
 h1 {
-  text-transform: capitalize;
   color: #241E46;
   margin: 0;
+}
+
+.contrast-heading {
+  color: #241E46;
 }
 
 h2 {
@@ -164,7 +227,6 @@ main p {
   font-size: 6vw;
   color: #FF7549;
   line-height: 1.2;
-  text-transform: capitalize;
 }
 
 li,
@@ -226,6 +288,7 @@ nav a:hover {
 h2.entry-title {
   text-align: center;
   margin-top: 2.4rem;
+  text-transform: uppercase;
 }
 
 p a {
@@ -241,6 +304,18 @@ p a:hover {
 
 main.post-30 p a {
   color: #fff;
+}
+
+.events-404 span {
+  color: #fff !important;
+}
+
+.header-404 {
+  text-align: center;
+}
+
+.header-404 p {
+  max-width: unset;
 }
 
 nav {
@@ -401,6 +476,38 @@ footer a:hover {
 
 .secondary-btn:hover a {
   color: #fff;
+}
+
+main.page .nf-form-content input[type=button] {
+  background-color: #FF7549;
+  border: 3px solid #FF7549;
+  border-radius: 100px;
+  padding: 1.1rem 0;
+  width: 16.7rem;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 6px #0d0d0d74;
+          box-shadow: 0px 3px 6px #0d0d0d74;
+  margin: 2.4rem auto 7.2rem auto;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+main.page .nf-form-content input[type=button] a {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+main.page .nf-form-content input[type=button]:hover {
+  background-color: unset;
+}
+
+main.page .nf-form-content input[type=button]:hover a {
+  color: #FF7549;
+}
+
+main.page .nf-form-content input[type=button]:hover {
+  color: #FF7549;
 }
 
 @media (min-width: 768px) {

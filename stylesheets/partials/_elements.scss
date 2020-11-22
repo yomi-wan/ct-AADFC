@@ -16,3 +16,14 @@
         }
     }
 }
+
+main.page{
+    .nf-form-content input[type=button]{
+        @include button;
+        text-transform: uppercase;
+        font-family: $headingFont;
+        &:hover{
+            color: $orange;
+        }
+    }
+}

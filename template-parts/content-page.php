@@ -29,6 +29,6 @@
 
         <footer class="entry-footer">
             <!-- //adds a link to edit your content -->
-            <?php edit_post_link( __( 'Edit', 'theme-name-here' ), '<span class="edit-link">', '</span>' ); ?>
+            <?php edit_post_link( __( 'Edit', 'aadfc' ), '<span class="edit-link">', '</span>' ); ?>
         </footer><!-- .entry-footer -->
     </section><!-- #post/page-## -->

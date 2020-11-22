@@ -15,7 +15,7 @@
     <!-- entry header -->
     <header>
         <!-- get the page title -->
-        <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+        <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
         <?php the_date(); ?>
         <?php 
             if(has_category()) {
@@ -43,7 +43,7 @@
 
     <footer class="entry-footer">
         <!--adds a link to edit your content -->
-        <?php edit_post_link( __('Edit','codefish'), '<span class="edit-link">', '</span>' ); ?>
+        <?php edit_post_link( __('Edit','aadfc'), '<span class="edit-link">', '</span>' ); ?>
     </footer>
 
 

@@ -11,14 +11,16 @@ h6,
   line-height: $headingLineHeight;
   padding: 0;
   margin: 0;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: $orange;
   margin-bottom: $sm-space;
 }
 h1 {
-  text-transform: capitalize;
   color: $background-color;
   margin: 0;
+}
+.contrast-heading{
+  color: $background-color;
 }
 h2 {
   font-size: $mH2;
@@ -42,7 +44,6 @@ main p {
   font-size: $mBannerFont;
   color: $orange;
   line-height: $headingLineHeight;
-  text-transform: capitalize;
 }
 li,
 ul {
@@ -93,6 +94,7 @@ nav a {
 h2.entry-title {
   text-align: center;
   margin-top: 2.4rem;
+  text-transform: uppercase;
 }
 
 p {
@@ -105,5 +107,14 @@ main.post-30{
     a{
       color: $text-light;
     }
+  }
+}
+.events-404 span{
+  color: $text-light !important;
+}
+.header-404{
+  text-align: center;
+  p{
+    max-width: unset;
   }
 }
