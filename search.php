@@ -35,7 +35,12 @@
                 <?php get_template_part( 'template-parts/content', 'search' ); ?>
                 <?php endwhile; ?>
                 <?php else : ?>
-                    <?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+                <div class="my-5 py-5 text-white">
+                    <h2 class="text-center py-5">Sorry not found</h2>
+
+                </div>
+
                 <?php endif; ?>
             </div><!-- .row -->
         </main><!-- #main -->

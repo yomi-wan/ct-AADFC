@@ -57,7 +57,8 @@ section {
   }
 }
 section.bg-white {
-  padding: $lg-space 0;
+  padding-top: $lg-space;
+  padding-bottom: $lg-space;
   background-color: $text-light;
   h2 {
     color: $background-color;
@@ -163,3 +164,4 @@ main.page{
   }
 
 }
+

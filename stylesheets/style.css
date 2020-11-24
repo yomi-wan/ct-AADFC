@@ -27,7 +27,8 @@ section:last-of-type {
 }
 
 section.bg-white {
-  padding: 7.2rem 0;
+  padding-top: 7.2rem;
+  padding-bottom: 7.2rem;
   background-color: #fff;
 }
 
@@ -181,7 +182,7 @@ h4,
 h5,
 h6,
 .banner p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: "Oswald", sans-serif;
   line-height: 1.2;
   padding: 0;
@@ -248,7 +249,8 @@ a:hover {
 
 nav a {
   font-family: "Oswald", sans-serif;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
+  line-height: 3;
   color: #fff;
   text-transform: uppercase;
 }
@@ -257,12 +259,8 @@ nav a:hover {
   color: #FF7549;
 }
 
-.ball {
-  display: inline-block;
-  height: 1rem;
-  width: 1rem;
-  background-color: #E92640;
-  border-radius: 100%;
+li.current_page_item a.nav-link {
+  color: #FF7549;
 }
 
 .events-front-page a {
@@ -318,6 +316,10 @@ main.post-30 p a {
   max-width: unset;
 }
 
+button:focus {
+  outline: none;
+}
+
 nav {
   background: #fff;
   padding: 1rem;
@@ -346,6 +348,31 @@ div.content-banner {
   background-repeat: no-repeat;
   padding-top: 12rem;
   position: relative;
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 5.7rem;
+  left: 0;
+  padding: 4.8rem 0 12rem 7.2rem;
+  width: 30rem;
+  background-color: #30376A;
+  z-index: 9000;
+  -webkit-box-shadow: 20px 40px 60px #00000099;
+          box-shadow: 20px 40px 60px #00000099;
+}
+
+.navbar-collapse.collapsing {
+  height: auto;
+  -webkit-transition: left 0.6s ease;
+  transition: left 0.6s ease;
+  left: -90%;
+}
+
+.navbar-collapse.show {
+  left: 0;
+  -webkit-transition: left 0.6s ease-in;
+  transition: left 0.6s ease-in;
 }
 
 /* footer */
@@ -510,7 +537,21 @@ main.page .nf-form-content input[type=button]:hover {
   color: #FF7549;
 }
 
+.ball {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  background-color: #E92640;
+  border-radius: 100%;
+}
+
 @media (min-width: 768px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  h1 br {
+    display: none;
+  }
   div.content-banner {
     background: #241e46;
     background-color: transparent;
@@ -635,8 +676,8 @@ main.page .nf-form-content input[type=button]:hover {
 }
 
 @media only screen and (min-width: 992px) {
-  h1 {
-    font-size: 2.4rem;
+  h1 br {
+    display: inline-block;
   }
   .banner p {
     font-size: 7.57rem;
@@ -649,9 +690,20 @@ main.page .nf-form-content input[type=button]:hover {
   }
   nav a {
     color: #8c1b64;
+    font-size: 3.2rem;
+    line-height: unset;
   }
   .navbar-nav li {
     padding-left: 2.4rem;
+  }
+  .navbar-collapse {
+    position: static;
+    width: unset;
+    background-color: unset;
+    z-index: unset;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    padding: unset;
   }
   .collapse:not(.show) {
     display: block;
@@ -665,6 +717,9 @@ main.page .nf-form-content input[type=button]:hover {
   }
   div.content-banner .banner p {
     font-size: 72px;
+  }
+  li.current_page_item a.nav-link {
+    color: #8c1b64;
   }
   li.current_page_item a.nav-link::before {
     content: "";

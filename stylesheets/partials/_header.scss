@@ -15,6 +15,7 @@ div.site-logo img{
    height: 100%;
    padding-right: 1rem;
 }
+
 // banner
 div.content-banner{
     background: $background-color;
@@ -25,5 +26,30 @@ div.content-banner{
     padding-top: $xl-space;
     position: relative;
 }
+.navbar-collapse {
+    position: absolute;
+    top: 5.7rem;
+    left: 0;
+    padding: $md-space 0 $xl-space $lg-space;
+    width: 30rem;
+    background-color: $navy;
+    z-index: 9000;
+    box-shadow: 20px 40px 60px #00000099;
+}
+.navbar-collapse.collapsing {
+    height: auto;
+    -webkit-transition: left 0.6s ease;
+    -o-transition: left 0.6s ease;
+    -moz-transition: left 0.6s ease;
+    transition: left 0.6s ease;
+    left: -90%;
+}
+.navbar-collapse.show {
+    left: 0;
+    -webkit-transition: left 0.6s ease-in;
+    -o-transition: left 0.6s ease-in;
+    -moz-transition: left 0.6s ease-in;
+    transition: left 0.6s ease-in;
 
+}
 

@@ -1,5 +1,11 @@
 // medium screens
 @media (min-width: 768px) {
+  h1 {
+    font-size: $h1;
+  }
+  h1 br{
+    display: none;
+  }
   div.content-banner {
     background: #241e46;
     background-color: transparent;
@@ -92,6 +98,7 @@
   .community.bg-white {
     border-radius: 0 100% 100% 100%;
     position: relative;
+
     p {
       max-width: 47rem;
     }
@@ -119,8 +126,8 @@
 
 // large screens
 @media only screen and (min-width: 992px) {
-  h1 {
-    font-size: $h1;
+  h1 br{
+    display: inline-block;
   }
   .banner p {
     font-size: $bannerFont;
@@ -134,13 +141,26 @@
 
   nav a {
     color: $purple;
+    font-size: $mH3;
+    line-height: unset;
   }
+  
   .navbar-nav li {
     padding-left: $sm-space;
   }
+  .navbar-collapse {
+    position: static;
+    width: unset;
+    background-color: unset;
+    z-index: unset;
+    box-shadow: unset;
+    padding: unset;
+}
   .collapse:not(.show) {
     display: block;
+    
   }
+
   div.site-logo img {
     width: 10rem;
     height: 100%;
@@ -151,7 +171,9 @@
       font-size: 72px;
     }
   }
-
+  li.current_page_item a.nav-link{
+    color: $purple;
+  }
   li.current_page_item a.nav-link::before {
     content: "";
     position: relative;
