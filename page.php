@@ -25,7 +25,7 @@
             * Include the Post-Format-specific template for the content.
             */
             // you don't have to keep your folder name as 'template-parts', it can be changed but be consistent of where you place your files. It's a good idea to keep your page/post content .php files in one location - creates more organized structure.
-            get_template_part( 'template-parts/content', get_post_format() );
+            get_template_part( 'template-parts/content', 'page' );
             ?>
         <!-- //end while loop -->
         <?php endwhile; ?>

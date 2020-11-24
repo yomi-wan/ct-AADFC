@@ -20,15 +20,8 @@
 	    <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
         
-        <div class="entry-content">
-            <!-- //display the page or post content -->
+        <div class="entry-content container text-white">
             <?php the_content(); ?>
-            <!-- //some pages could have pagination (more likely post/blog pages) -->
-            <!-- //or anything else you want to add in here, could be a general template tag or a custom post. -->
         </div><!-- .entry-content -->
 
-        <footer class="entry-footer">
-            <!-- //adds a link to edit your content -->
-            <?php edit_post_link( __( 'Edit', 'aadfc' ), '<span class="edit-link">', '</span>' ); ?>
-        </footer><!-- .entry-footer -->
     </section><!-- #post/page-## -->

@@ -1,7 +1,7 @@
 <?php
 /****
  * 
- * Template part for displaying content in the front-page (home page)
+ * Template part for displaying content in the Contact Page
  * 
  * @link https://developer.wordpress.org/theme/basics/template-hierarchy/
  * 
@@ -12,7 +12,7 @@
 <main <?php post_class();?> id="post-<?php the_ID();?>">
 <div class="container">
 <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-    <div class="row row-mg-reverse">
+    <div class="row row-md-reverse">
         <div class="col-md-6">
             <div class="contact-info">
                 <h5 class="contact-info-content"><?php the_field('contact_number'); ?></h5>

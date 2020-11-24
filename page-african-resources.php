@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all author pages
+ * The template for displaying African Resources Page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
@@ -12,7 +12,7 @@ get_header();
 ?>
     <?php if(have_posts()) : ?>
         <?php  while(have_posts()) : the_post(); ?>
-            <?php get_template_part( 'template-parts/content', 'about-us' );  ?>
+            <?php get_template_part( 'template-parts/content', 'african-resources' );  ?>
             <!-- end while loop -->
         <?php  endwhile;?>
         <?php else : ?>

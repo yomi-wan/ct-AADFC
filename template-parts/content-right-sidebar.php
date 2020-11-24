@@ -1,7 +1,7 @@
 <?php
 /***
  * 
- * This template part contains the footer widget area
+ * This template part contains the Right Sidebar widget area
  * 
  * @package AADFC
  * 

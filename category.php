@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all author pages
+ * The template for displaying all category pages
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
