@@ -688,13 +688,12 @@ main.page .nf-form-content input[type=button]:hover {
   h3 {
     font-size: 4.26rem;
   }
-  nav a {
+  .nav-link {
     color: #8c1b64;
-    font-size: 3.2rem;
     line-height: unset;
   }
   .navbar-nav li {
-    padding-left: 2.4rem;
+    padding-left: 1.8rem;
   }
   .navbar-collapse {
     position: static;
@@ -725,7 +724,7 @@ main.page .nf-form-content input[type=button]:hover {
     content: "";
     position: relative;
     display: inline-block;
-    top: -4rem;
+    top: -3rem;
     background: #E92640;
     width: 1.2rem;
     height: 1.2rem;

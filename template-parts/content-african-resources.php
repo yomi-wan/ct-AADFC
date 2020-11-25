@@ -21,7 +21,7 @@
                 <?php the_content(); ?>
             </div>
             <div class="col-md-6 bg-white container-fluid">
-
+            <?php the_post_thumbnail(); ?>
             </div>
         </div>
     </div>
