@@ -1,9 +1,15 @@
+@media only screen and (min-width: 375px) {
+  h1 {
+    font-size: $mH1;
+  }
+}
+
 // medium screens
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   h1 {
     font-size: $h1;
   }
-  h1 br{
+  h1 br {
     display: none;
   }
   div.content-banner {
@@ -80,7 +86,7 @@
     aside {
       padding: $md-space;
       &:nth-of-type(2) {
-        padding-bottom: 10.8rem;
+        padding-bottom: 10.7rem;
       }
       &.widget_text {
         position: absolute;
@@ -109,9 +115,10 @@
       right: 4%;
     }
   }
-  main.post-30 {
-    .events-content {
-      div:first-of-type {
+
+  main.page {
+    .split-layout {
+      div.col-12 {
         margin-bottom: 0;
       }
     }
@@ -122,11 +129,16 @@
       margin: auto;
     }
   }
+  .africa-img-wrap {
+    border-radius: 0 20rem 20rem 20rem;
+    padding: $md-space;
+    margin-top: 6rem;
+  }
 } //end of medium query
 
 // large screens
 @media only screen and (min-width: 992px) {
-  h1 br{
+  h1 br {
     display: inline-block;
   }
   .banner p {
@@ -138,14 +150,17 @@
   h3 {
     font-size: $h3;
   }
-  .nav-link {
-    color: $purple;
-    line-height: unset;
+  .navbar {
+    .navbar-nav li {
+      padding-left: 1rem;
+      a.nav-link {
+        padding: 0;
+        color: $purple;
+        line-height: unset;
+      }
+    }
   }
-  
-  .navbar-nav li {
-    padding-left: 1.8rem;
-  }
+
   .navbar-collapse {
     position: static;
     width: unset;
@@ -153,7 +168,7 @@
     z-index: unset;
     box-shadow: unset;
     padding: unset;
-}
+  }
   .collapse:not(.show) {
     display: block;
   }
@@ -168,7 +183,7 @@
       font-size: 72px;
     }
   }
-  li.current_page_item a.nav-link{
+  li.current_page_item a.nav-link {
     color: $purple;
   }
   li.current_page_item a.nav-link::before {
@@ -217,21 +232,20 @@
       margin-right: auto;
     }
     &:first-of-type {
-      h3{
+      h3 {
         max-width: 450px;
         margin-left: auto;
       }
-      div.textwidget{
+      div.textwidget {
         margin-left: auto;
         margin-right: 0;
       }
     }
-
   }
 } //end of large query
 
 // xl screens
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .banner-image {
     max-width: 892px;
     max-height: 892px;

@@ -121,11 +121,11 @@ section.bg-white {
   max-width: 43rem;
 
 }
-main.post-30 {
+main.page {
   margin-top: $sm-space;
-  .events-content {
+  .split-layout {
     margin-bottom: $lg-space;
-    div:first-of-type {
+    div.col-12 {
       margin-bottom: $lg-space;
     }
   }
@@ -163,5 +163,10 @@ main.page{
     }
   }
 
+}
+.africa-img-wrap{
+  border-radius: 0 16.7rem 16.7rem 16.7rem;
+  padding-top: $md-space; 
+  padding-bottom: $md-space; 
 }
 

@@ -10,24 +10,33 @@
  */
 ?>
 <main <?php post_class();?> id="post-<?php the_ID();?>">
-
-
     <div class="container-fluid container-md">
         <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-    
-        <div class="events-content text-white row align-items-end justify-content-between">
+
+        <div class="split-layout text-white row justify-content-between">
             <div class="col-12 col-md-6">
-                <!-- display events page content -->
-                <?php the_content(); ?>
+                <?php if (have_rows('african_facts')): ?>
+                <?php while (have_rows('african_facts')):  the_row();?>
+
+                <h3><?php the_sub_field('facts_heading');?></h3>
+                <div>
+                    <?php the_sub_field('fact');?>
+                </div>
+                <?php endwhile; ?>
+                <?php endif; ?>
             </div>
-            <div class="col-md-6 bg-white container-fluid">
-            <?php the_post_thumbnail(); ?>
+            <div class="col-md-6 col-lg-4 col-xl-3 bg-white africa-img-wrap">
+                <?php the_post_thumbnail(); ?>
             </div>
         </div>
     </div>
 
-    <section class="bg-white container-fluid">
- 
+    <section class="bg-white">
+        <div class="container">
+            <!-- display events page content -->
+            <?php the_content(); ?>
+        </div>
+
     </section>
 
 

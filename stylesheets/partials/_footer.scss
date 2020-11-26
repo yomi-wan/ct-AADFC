@@ -38,6 +38,9 @@ footer {
           float: left;
           display: inline;
           width: 50%;
+          &:nth-child(even) {
+            text-align: right;
+          }
           a {
             font-family: $headingFont;
             text-transform: uppercase;

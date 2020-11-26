@@ -15,7 +15,7 @@
     <div class="container-fluid container-md">
         <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
     
-        <div class="events-content text-white row align-items-end justify-content-between">
+        <div class="split-layout text-white row align-items-end justify-content-between">
             <div class="col-12 col-md-8 col-xl-7">
                 <!-- display events page content -->
                 <?php the_content(); ?>
