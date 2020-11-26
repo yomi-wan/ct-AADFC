@@ -90,7 +90,7 @@ li.current_page_item a.nav-link{
 
 h2.entry-title {
   text-align: center;
-  margin-top: 2.4rem;
+  margin-top: $md-space;
   text-transform: uppercase;
 }
 
@@ -117,4 +117,8 @@ main.post-30{
 }
 button:focus{
   outline: none;
+}
+.af-resource-content li{
+  line-height: 2.4;
+  font-size: 1.6rem;
 }

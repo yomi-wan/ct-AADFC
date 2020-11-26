@@ -99,10 +99,6 @@ section.bg-white h2 {
   max-width: 43rem;
 }
 
-main.page {
-  margin-top: 2.4rem;
-}
-
 main.page .split-layout {
   margin-bottom: 7.2rem;
 }
@@ -291,7 +287,7 @@ li.current_page_item a.nav-link {
 
 h2.entry-title {
   text-align: center;
-  margin-top: 2.4rem;
+  margin-top: 4.8rem;
   text-transform: uppercase;
 }
 
@@ -324,6 +320,11 @@ main.post-30 p a {
 
 button:focus {
   outline: none;
+}
+
+.af-resource-content li {
+  line-height: 2.4;
+  font-size: 1.6rem;
 }
 
 nav {
@@ -711,7 +712,7 @@ main.page .nf-form-content input[type=button]:hover {
     font-size: 4.26rem;
   }
   .navbar .navbar-nav li {
-    padding-left: 1rem;
+    padding-left: 1.8rem;
   }
   .navbar .navbar-nav li a.nav-link {
     padding: 0;
@@ -797,6 +798,9 @@ main.page .nf-form-content input[type=button]:hover {
   .footer-container aside:first-of-type div.textwidget {
     margin-left: auto;
     margin-right: 0;
+  }
+  .af-resource-content li {
+    font-size: 1.8rem;
   }
 }
 

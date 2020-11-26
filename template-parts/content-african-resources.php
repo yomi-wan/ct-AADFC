@@ -32,7 +32,7 @@
     </div>
 
     <section class="bg-white">
-        <div class="container">
+        <div class="container af-resource-content">
             <!-- display events page content -->
             <?php the_content(); ?>
         </div>
