@@ -226,7 +226,7 @@
     }
   }
   .footer-container aside {
-    padding: $md-space $xl-space;
+
     div.textwidget {
       max-width: 450px;
       margin-right: auto;
@@ -267,5 +267,9 @@
 @media (min-width: 1280px) {
   .banner p {
     margin-left: -8rem;
+  }
+
+  .footer-container aside{
+    padding: $md-space $xl-space;
   }
 }
