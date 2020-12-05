@@ -31,8 +31,8 @@
         </div>
     </div>
 
-    <section class="bg-white">
-        <div class="container af-resource-content">
+    <section class="bg-white  af-resource-content">
+        <div class="container">
             <!-- display events page content -->
             <?php the_content(); ?>
         </div>

@@ -123,8 +123,13 @@
     padding: $md-space;
     margin-top: 6rem;
   }
-  .af-resource-content li{
-    font-size: 2.4rem;
+  .af-resource-content {
+    background-image: url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/AADFC-logo-nav.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    li {
+      font-size: 2.4rem;
+    }
   }
 } //end of medium query
 
@@ -205,7 +210,6 @@
     padding: 9.6rem 0 4.8rem 2.4rem;
   }
   .footer-container aside {
-
     div.textwidget {
       max-width: 450px;
       margin-right: auto;
@@ -221,7 +225,6 @@
       }
     }
   }
-
 } //end of large query
 
 // xl screens
@@ -230,17 +233,17 @@
     max-width: 892px;
     max-height: 892px;
   }
-  body.mec-events-template-default.single.single-mec-events{
+  body.mec-events-template-default.single.single-mec-events {
     section#main-content {
-      .mec-wrap{
-        article.mec-single-event.mec-single-modern{
-          div.mec-events-event-image{
+      .mec-wrap {
+        article.mec-single-event.mec-single-modern {
+          div.mec-events-event-image {
             padding-right: 5rem;
             padding-left: 5rem;
           }
         }
       }
-    } 
+    }
   }
 }
 @media (min-width: 1280px) {
@@ -248,7 +251,7 @@
     margin-left: -8rem;
   }
 
-  .footer-container aside{
+  .footer-container aside {
     padding: $md-space $xl-space;
   }
 }
