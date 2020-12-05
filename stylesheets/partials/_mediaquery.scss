@@ -229,6 +229,18 @@
     max-width: 892px;
     max-height: 892px;
   }
+  body.mec-events-template-default.single.single-mec-events{
+    section#main-content {
+      .mec-wrap{
+        article.mec-single-event.mec-single-modern{
+          div.mec-events-event-image{
+            padding-right: 5rem;
+            padding-left: 5rem;
+          }
+        }
+      }
+    } 
+  }
 }
 @media (min-width: 1280px) {
   .banner p {

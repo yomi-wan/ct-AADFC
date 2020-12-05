@@ -186,6 +186,10 @@ body.mec-events-template-default.single.single-mec-events section#main-content .
   background-color: #fff;
 }
 
+body.mec-events-template-default.single.single-mec-events section#main-content p.nocomments {
+  display: none;
+}
+
 h1,
 h2,
 h3,
@@ -803,6 +807,10 @@ main.page .nf-form-content input[type=button]:hover {
   .banner-image {
     max-width: 892px;
     max-height: 892px;
+  }
+  body.mec-events-template-default.single.single-mec-events section#main-content .mec-wrap article.mec-single-event.mec-single-modern div.mec-events-event-image {
+    padding-right: 5rem;
+    padding-left: 5rem;
   }
 }
 
