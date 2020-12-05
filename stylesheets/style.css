@@ -675,14 +675,6 @@ main.page .nf-form-content input[type=button]:hover {
     border-radius: 0 100% 100% 100%;
     position: relative;
   }
-  .community.bg-white p {
-    max-width: 47rem;
-  }
-  .community.bg-white .entry-content p:last-of-type {
-    position: absolute;
-    bottom: 0;
-    right: 4%;
-  }
   main.page .split-layout div.col-12 {
     margin-bottom: 0;
   }
@@ -772,19 +764,6 @@ main.page .nf-form-content input[type=button]:hover {
   .community.bg-white {
     padding: 9.6rem 0 24rem 2.4rem;
   }
-  .community.bg-white p {
-    max-width: 65rem;
-  }
-  .community.bg-white .entry-content p:last-of-type {
-    right: 8%;
-    bottom: 10%;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  .community.bg-white .entry-content p:last-of-type img {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
-  }
   .footer-container aside div.textwidget {
     max-width: 450px;
     margin-right: auto;
@@ -806,13 +785,6 @@ main.page .nf-form-content input[type=button]:hover {
   .banner-image {
     max-width: 892px;
     max-height: 892px;
-  }
-  .community.bg-white .entry-content p:last-of-type {
-    bottom: 20%;
-  }
-  .community.bg-white .entry-content p:last-of-type img {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
   }
 }
 

@@ -9,15 +9,10 @@
  * 
  */
 ?>
-<!--gives the page class-name and displays a page id -->
 <main <?php post_class();?> id="post-<?php the_ID();?>">
-    <!-- entry header -->
-    <!-- if you had an image it will display using wordpress' largest default thumbnail sizing (settings in the admin - you can see the sizes) -->
-    <?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
     <div class="content-banner align-items-center">
-
-                <?php get_template_part('template-parts/content', 'banner'); ?>
-<div class="banner-image"></div>
+        <?php get_template_part('template-parts/content', 'banner'); ?>
+        <div class="banner-image"></div>
     </div>
     <section class="bg-white what-wrapper">
         <!-- what we do section start -->
@@ -50,7 +45,8 @@
                     <?php if (have_rows('volunteer')): ?>
                     <?php while (have_rows('volunteer')):  the_row();?>
                     <div class="wwedo volunteer d-flex flex-md-column">
-                        <div class="col-6 col-md-12"><img src="<?php the_sub_field('image');?>" alt="volunteer icon"></div>
+                        <div class="col-6 col-md-12"><img src="<?php the_sub_field('image');?>" alt="volunteer icon">
+                        </div>
                         <?php the_sub_field('text');?>
                     </div>
                     <?php endwhile; ?>
@@ -63,37 +59,28 @@
 
     <section class="container">
         <!-- event section start -->
-
         <h2><?php the_field('events_heading'); ?></h2>
         <!-- custom event posts -->
-        <?php 
-                $args = array( 'post_type' => 'events', 'posts_per_page' => 3 );
-                $the_query = new WP_Query( $args ); 
-            ?>
-
         <div class="events-front-page">
-        <?php echo do_shortcode('[MEC id="147"]'); ?>
-        
+            <?php echo do_shortcode('[MEC id="147"]'); ?>
         </div>
-
-        <div class="secondary-btn"><a href="<?php the_field('event_btn'); ?>">View All Events</a></div>
-
-
+            <div class="secondary-btn"><a href="<?php the_field('event_btn'); ?>">View All Events</a></div>
     </section><!-- end of events -->
 
     <section class="community container-fluid container-lg bg-white">
         <!-- aadfc community section -->
-        <div class="">
-
-            <h2><?php the_field('community_heading'); ?></h2>
-            <div class="entry-content">
+        <h2><?php the_field('community_heading'); ?></h2>
+        <div class="row justify-content-between">
+            <div class="entry-content col-md-8 col-lg-6">
                 <!-- display page or post content -->
-                <?php 
-                            the_content(); 
-                        
-                ?>
+                <?php the_content(); ?>
 
-
+            </div>
+            <div class="col-md-4 col-lg-5 d-flex flex-column justify-content-between">
+                <p class="quote d-none d-md-block">
+                    Some quote here!!
+                </p>
+                <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
             </div>
         </div>
     </section><!-- end of community section -->
