@@ -71,16 +71,23 @@
         <!-- aadfc community section -->
         <h2><?php the_field('community_heading'); ?></h2>
         <div class="row justify-content-between">
-            <div class="entry-content col-md-8 col-lg-6">
+            <div class="entry-content col-sm-11 col-md-8 col-lg-6">
                 <!-- display page or post content -->
                 <?php the_content(); ?>
-
             </div>
-            <div class="col-md-4 col-lg-5 d-flex flex-column justify-content-between">
-                <p class="quote d-none d-md-block">
-                    Some quote here!!
+            <div class="col-sm-8 col-md-4 col-lg-5 d-flex flex-column justify-content-between">
+                <div class="quote d-none d-md-block text-right">
+                <?php if (have_rows('front_quote')): ?>
+                <?php while (have_rows('front_quote')):  the_row();?>
+
+                <p class="display-4"><?php the_sub_field('quote');?></p>
+                <p>
+                    <?php the_sub_field('sub_text');?>
                 </p>
-                <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+                <?php endwhile; ?>
+                <?php endif; ?>
+                </div>
+                <div class="front-wrapper"><?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?></div>
             </div>
         </div>
     </section><!-- end of community section -->

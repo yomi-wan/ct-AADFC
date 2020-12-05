@@ -134,4 +134,18 @@ main.page{
   padding-top: $md-space; 
   padding-bottom: $md-space; 
 }
+body.mec-events-template-default.single.single-mec-events{
+  section#main-content .mec-wrap{
+    article.mec-single-event.mec-single-modern{
+      .widget{
+        h4, h2{
+          color: $text-light;
+        }
+      }
+      div.col-md-8{
+        background-color: #fff;
+      }
+    }
+  }
+}
 

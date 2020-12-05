@@ -19,7 +19,7 @@ h1 {
   color: $background-color;
   margin: 0;
 }
-.contrast-heading{
+.contrast-heading {
   color: $background-color;
 }
 h2 {
@@ -28,7 +28,7 @@ h2 {
 h3 {
   font-size: $mH3;
 }
-h4.mec-event-title > a.mec-color-hover{
+h4.mec-event-title > a.mec-color-hover {
   color: $text-light !important;
   font-weight: 400;
 }
@@ -69,7 +69,7 @@ nav a {
     color: $orange;
   }
 }
-li.current_page_item a.nav-link{
+li.current_page_item a.nav-link {
   color: $orange;
 }
 .events-front-page a {
@@ -99,26 +99,35 @@ p {
     @include inline-links;
   }
 }
-main.post-30{
-  p{
-    a{
+main.post-30 {
+  p {
+    a {
       color: $text-light;
     }
   }
 }
-.events-404 span{
+.events-404 span {
   color: $text-light !important;
 }
-.header-404{
+.header-404 {
   text-align: center;
-  p{
+  p {
     max-width: unset;
   }
 }
-button:focus{
+button:focus {
   outline: none;
 }
-.af-resource-content li{
+.af-resource-content li {
   line-height: 2.4;
   font-size: 1.6rem;
+}
+.quote {
+  font-family: $headingFont;
+  font-weight: 400;
+  max-width: 22rem;
+  p.display-4 {
+    color: $purple;
+    margin: 0;
+  }
 }
