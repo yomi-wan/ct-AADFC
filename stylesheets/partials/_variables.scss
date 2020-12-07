@@ -9,6 +9,7 @@ $text-dark: #0D0D0D;
 $text-light: #fff;
 $trans-purple: #8c1b64d8;
 $trans-blue: #241E46D3;
+$grey: #eceff1;
 
 //type
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;600&display=swap');
@@ -18,6 +19,7 @@ $baseFontSize: 0.625rem; //10px
 
 $baseLineHeight: 1.5; 
 $headingLineHeight: 1.2;
+$lgLineHeight: 4.8rem;
 
 $bodyFont: 1.8rem; //18px
 $xsFont: 1.4rem;
@@ -31,8 +33,10 @@ $h1: 2.2rem;
 $bannerFont: 7.57rem;
 $h2: 5.68rem;
 $h3: 4.26rem;
+$h4: 3.2rem;
 
 $icon: 4rem;
+$contact-icon: 3.2rem;
 
 // spacing
 $xs-space: 1.2rem;

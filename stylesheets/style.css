@@ -178,7 +178,8 @@ main.page .mec-load-more-button:hover {
   padding-bottom: 4.8rem;
 }
 
-body.mec-events-template-default.single.single-mec-events section#main-content .mec-wrap article.mec-single-event.mec-single-modern .widget h4, body.mec-events-template-default.single.single-mec-events section#main-content .mec-wrap article.mec-single-event.mec-single-modern .widget h2 {
+body.mec-events-template-default.single.single-mec-events section#main-content .mec-wrap article.mec-single-event.mec-single-modern .widget h4,
+body.mec-events-template-default.single.single-mec-events section#main-content .mec-wrap article.mec-single-event.mec-single-modern .widget h2 {
   color: #fff;
 }
 
@@ -187,6 +188,30 @@ body.mec-events-template-default.single.single-mec-events section#main-content .
 }
 
 body.mec-events-template-default.single.single-mec-events section#main-content p.nocomments {
+  display: none;
+}
+
+/*    contact page      */
+.contact-info {
+  border: 1px solid #eceff1;
+  background-color: #fff;
+  margin: 2.4rem 0 7.2rem;
+}
+
+.contact-info .border-line {
+  border-top: 1px solid #eceff1;
+}
+
+.contact-form .contact-form h3 {
+  margin-top: 6rem;
+  margin-bottom: 0.1rem;
+}
+
+.contact-form div.nf-form-content label {
+  color: #FF7549;
+}
+
+.contact-form .nf-form-fields-required {
   display: none;
 }
 
@@ -364,6 +389,18 @@ button:focus {
 .quote p.display-4 {
   color: #8c1b64;
   margin: 0;
+}
+
+.contact-info-content {
+  color: #0D0D0D;
+  font-family: "Oswald", sans-serif;
+  margin: 2.4rem;
+}
+
+.contact-info-content .material-icons {
+  color: #E92640;
+  font-size: 3.2rem;
+  padding-right: 1rem;
 }
 
 nav {
@@ -567,6 +604,8 @@ main.page .nf-form-content input[type=button] {
   margin: 2.4rem auto 7.2rem auto;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
+  margin-top: 0;
+  float: right;
 }
 
 main.page .nf-form-content input[type=button] a {
@@ -733,6 +772,28 @@ main.page .nf-form-content input[type=button]:hover {
   }
   .af-resource-content li {
     font-size: 2.4rem;
+  }
+  /*    contact page      */
+  .contact-info {
+    border: none;
+    width: 31.6rem;
+    height: 31.6rem;
+    background-color: #30376A;
+    border-radius: 0rem 15.8rem 15.8rem 15.8rem;
+    padding-left: 4rem;
+    margin-top: 6rem;
+  }
+  .contact-info h4.contact-info-heading {
+    font-size: 3.2rem;
+    color: #fff;
+  }
+  .contact-info p.contact-info-content {
+    color: #fff;
+    margin: 0;
+    line-height: 4.8rem;
+  }
+  .contact-form h3 {
+    margin: 0;
   }
 }
 

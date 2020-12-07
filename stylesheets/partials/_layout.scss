@@ -85,7 +85,6 @@ section.bg-white {
   padding: $sm-space;
   text-align: center;
   max-width: 43rem;
-
 }
 main.page {
   .split-layout {
@@ -95,62 +94,83 @@ main.page {
     }
   }
 }
-.events-calendar-container{
+.events-calendar-container {
   padding-bottom: $lg-space;
 }
 .error404,
-main.page{
-  .mec-load-more-button{
+main.page {
+  .mec-load-more-button {
     @include button;
     padding: unset;
     color: $text-light;
-    &:hover{
+    &:hover {
       color: $orange;
     }
   }
 }
-.search-form{
+.search-form {
   max-width: 50rem;
   margin: 0 auto;
-  input{
-    padding:1rem;
+  input {
+    padding: 1rem;
     border: none;
-    &.search-field{
-    margin-right: -5px;
-    width: 40rem;
-    border-radius: 5px 0 0 5px; 
+    &.search-field {
+      margin-right: -5px;
+      width: 40rem;
+      border-radius: 5px 0 0 5px;
     }
-    &.search-submit{
+    &.search-submit {
       border-radius: 0 5px 5px 0;
       background-color: $orange;
       border-left: 2px solid $orange;
       max-width: 10rem;
     }
   }
-
 }
-.africa-img-wrap{
+.africa-img-wrap {
   border-radius: 0 16.7rem 16.7rem 16.7rem;
-  padding-top: $md-space; 
-  padding-bottom: $md-space; 
+  padding-top: $md-space;
+  padding-bottom: $md-space;
 }
-body.mec-events-template-default.single.single-mec-events{
+body.mec-events-template-default.single.single-mec-events {
   section#main-content {
-    .mec-wrap{
-      article.mec-single-event.mec-single-modern{
-        .widget{
-          h4, h2{
+    .mec-wrap {
+      article.mec-single-event.mec-single-modern {
+        .widget {
+          h4,
+          h2 {
             color: $text-light;
           }
         }
-        div.col-md-8{
+        div.col-md-8 {
           background-color: #fff;
         }
       }
     }
-    p.nocomments{
+    p.nocomments {
       display: none;
     }
-  } 
+  }
 }
 
+/*    contact page      */
+.contact-info {
+  border: 1px solid $grey;
+  background-color: #fff;
+  margin: $sm-space 0 $lg-space;
+  .border-line {
+    border-top: 1px solid $grey;
+  }
+}
+.contact-form {
+  .contact-form h3 {
+    margin-top: 6rem;
+    margin-bottom: 0.1rem;
+  }
+  div.nf-form-content label {
+    color: $orange;
+  }
+  .nf-form-fields-required {
+    display: none;
+  }
+}

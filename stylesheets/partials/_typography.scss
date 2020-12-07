@@ -140,3 +140,13 @@ button:focus {
     margin: 0;
   }
 }
+.contact-info-content {
+  color: $text-dark;
+  font-family: $headingFont;
+  margin: $sm-space;
+  .material-icons{
+    color: $red;
+    font-size: $contact-icon;
+    padding-right: 1rem;
+  }
+}

@@ -22,6 +22,8 @@ main.page{
         @include button;
         text-transform: uppercase;
         font-family: $headingFont;
+        margin-top: 0;
+        float: right;
         &:hover{
             color: $orange;
         }
