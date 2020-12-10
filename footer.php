@@ -23,7 +23,7 @@
                 <!-- <li><a href="#">Terms &amp; Conditions</a> | </li>
                 <li><a href="#">Privacy Policy</a></li> -->
             </ul>
-            <p class="m-0">Designed &amp; Developed by KIY Designs</p>
+            <p class="m-0">Designed &amp; Developed by <a href="developer.php" target="_blank">KIY Designs</a></p>
         </div>
         <?php wp_footer(); ?>
     </body>

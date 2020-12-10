@@ -34,16 +34,6 @@ add_action('wp_enqueue_scripts', 'aadfc_enqueue_styles');
 	add_theme_support('post-thumbnails');
 
 	// theme colours
-// 	add_theme_support( 'editor-color-palette',
-// array( 'name' => 'purple', 'color' => '#8C1B64' ),
-// array( 'name' => 'red', 'color' => '#E92640' ),
-// array( 'name' => 'orange', 'color' => '#FF7549' ),
-// array( 'name' => 'yellow', 'color' => '#F2B705' ),
-// array( 'name' => 'navy', 'color' => '#241E46' ),
-// array( 'name' => 'white', 'color' => '#fff' ),
-// array( 'name' => 'black', 'color' => '#0D0D0D' ),
-// );
-
 add_theme_support( 'editor-color-palette', array(
 	array(
 		'name' => __( 'strong magenta', 'aadfc' ),

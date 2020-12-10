@@ -33,7 +33,7 @@
 
     <section class="bg-white  af-resource-content">
         <div class="container">
-            <!-- display events page content -->
+            <!-- display African Resources page content -->
             <?php the_content(); ?>
         </div>
 
