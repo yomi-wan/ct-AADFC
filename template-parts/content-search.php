@@ -8,7 +8,7 @@
     ?>
 
 <div class="col-12 col-lg-6 col-xl-4">
-    <div class="card px-3 py-5">
+    <div class="card px-3 py-5 mb-5">
         <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
             <header class="entry-header">
                 <?php
