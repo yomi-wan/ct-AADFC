@@ -492,11 +492,13 @@ footer p {
   margin: 0;
 }
 
-footer a {
+footer p a {
   color: #FF7549;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
 }
 
-footer a:hover {
+footer p a:hover {
   color: #E92640;
 }
 

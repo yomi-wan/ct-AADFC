@@ -7,11 +7,13 @@ footer {
   p {
     padding: 0;
     margin: 0;
-  }
-  a {
-    color: $orange;
-    &:hover {
-      color: $red;
+    a {
+      color: $orange;
+      -webkit-box-shadow: unset;
+      box-shadow: unset;
+      &:hover {
+        color: $red;
+      }
     }
   }
 }
@@ -52,8 +54,8 @@ footer {
         }
       }
     }
-    &:nth-of-type(3){
-      a:hover img{
+    &:nth-of-type(3) {
+      a:hover img {
         filter: invert(100%);
       }
     }
