@@ -64,7 +64,8 @@
         <div class="events-front-page">
             <?php echo do_shortcode('[MEC id="147"]'); ?>
         </div>
-            <div class="secondary-btn"><a href="<?php the_field('event_btn'); ?>">View All Events</a></div>
+            <div class="secondary-btn"><a href="<?php echo esc_url( get_page_link(30) ); ?>"><?php esc_html_e( 'View All Events', 'textdomain' ); ?></a></div>
+            
     </section><!-- end of events -->
 
     <section class="community container-fluid container-lg bg-white">

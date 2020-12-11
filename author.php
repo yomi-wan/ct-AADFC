@@ -80,7 +80,6 @@ get_header();
             <?php //get_search_form(); ?>
         </div><!-- .entry-content -->
     </article><!-- #post-0 -->
-    <!-- or show this template tag (above is just another we could display an else. ) -->
     <?php //get_template_part('template-parts/content', 'none'); ?>
     <?php endif; ?>
     

@@ -113,18 +113,18 @@ main.page .split-layout div.col-12 {
   margin-bottom: 7.2rem;
 }
 
-.card {
+.past-galleries .card {
   background-color: #30376A;
 }
 
-.card .aspect-ratio-box {
+.past-galleries .card .aspect-ratio-box {
   height: 0;
   overflow: hidden;
   position: relative;
   padding-top: calc(400 / 600 * 100%);
 }
 
-.card .aspect-ratio-box img {
+.past-galleries .card .aspect-ratio-box img {
   position: absolute;
   top: 0;
   left: 0;
@@ -445,8 +445,8 @@ div.site-logo img {
 
 div.content-banner {
   background: #241E46;
-  background: -webkit-gradient(linear, left top, left bottom, from(#241e4600), to(#241e46e1)), url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
-  background: linear-gradient(#241e4600, #241e46e1), url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(#241e4600), to(#241e46e1)), url(http://african.web.dmitcapstone.ca/wordpress/banner-bgd/);
+  background: linear-gradient(#241e4600, #241e46e1), url(http://african.web.dmitcapstone.ca/wordpress/banner-bgd/);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
