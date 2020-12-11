@@ -115,6 +115,26 @@ main.page {
         mix-blend-mode: luminosity;
       }
     }
+    .card-text {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+      color: $text-light;
+      h4{
+        color: $text-light;
+      }
+    }
+    &:hover .card-text{
+      top:2rem;
+      bottom: 2rem;
+      left: 2rem;
+      right: 2rem;
+      background-color: $trans-purple;
+      padding: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 

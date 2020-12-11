@@ -24,7 +24,7 @@
         <?php 
             $args = array(
                 'post_type'     =>  'gallery',
-                'posts_per_page'    =>  6, // not a fan of this...maybe more galleries at once?
+                'posts_per_page'    =>  4, // not a fan of this...maybe more galleries at once?
                 'orderby'           => 'date',
                 'order'             => 'DESC'
             );

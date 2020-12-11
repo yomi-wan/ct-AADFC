@@ -24,6 +24,7 @@
                 </div>
                 <?php endwhile; ?>
                 <?php endif; ?>
+                <p class="fact-2"><?php the_field('fact_2'); ?></p>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 bg-white africa-img-wrap">
                 <?php the_post_thumbnail(); ?>

@@ -28,7 +28,11 @@ h2 {
 h3 {
   font-size: $mH3;
 }
+h4{
+  font-size: $mH4;
+}
 h4.mec-event-title > a.mec-color-hover {
+  font-size: 1.6rem;
   color: $text-light !important;
   font-weight: 400;
 }
@@ -149,4 +153,8 @@ button:focus {
     font-size: $contact-icon;
     padding-right: 1rem;
   }
+}
+p.fact-2{
+  font-size: 2.4rem;
+  color: $orange;
 }

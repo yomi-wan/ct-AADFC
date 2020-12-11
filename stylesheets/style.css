@@ -133,6 +133,35 @@ main.page .split-layout div.col-12 {
   mix-blend-mode: luminosity;
 }
 
+.past-galleries .card .card-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: #fff;
+}
+
+.past-galleries .card .card-text h4 {
+  color: #fff;
+}
+
+.past-galleries .card:hover .card-text {
+  top: 2rem;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  background-color: #8c1b64d8;
+  padding: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .error404 .mec-load-more-button,
 main.page .mec-load-more-button {
   background-color: #FF7549;
@@ -270,7 +299,12 @@ h3 {
   font-size: 3.2rem;
 }
 
+h4 {
+  font-size: 2.4rem;
+}
+
 h4.mec-event-title > a.mec-color-hover {
+  font-size: 1.6rem;
   color: #fff !important;
   font-weight: 400;
 }
@@ -422,6 +456,11 @@ button:focus {
   color: #E92640;
   font-size: 3.2rem;
   padding-right: 1rem;
+}
+
+p.fact-2 {
+  font-size: 2.4rem;
+  color: #FF7549;
 }
 
 nav {
