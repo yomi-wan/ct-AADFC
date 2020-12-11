@@ -35,7 +35,7 @@
     // will display up to 3 gallery on this page.
     $args = array( 'post_type' => 'gallery', 
     'posts_per_page' => 4,
-    'order'             => 'ASC' 
+    'order'             => 'DEC' 
     );
     $the_query = new WP_Query( $args ); 
 ?>
