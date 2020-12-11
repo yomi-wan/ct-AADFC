@@ -46,7 +46,7 @@
         <div class="row">
             <?php if ( $the_query->have_posts() ) : ?>
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-            <div class="col-sm-6 col-lg-4 mb-3">
+            <div class="col-6 col-lg-4 mb-3">
                 <div class="card h-100">
                     <header>
                         <div class="aspect-ratio-box">
@@ -66,6 +66,4 @@
             <?php endif; ?>
         </div>
     </section>
-    <!-- //end custom gallery post type -->
-
 </main>
