@@ -69,7 +69,7 @@
 
             <div id="events-error"></div>
         </div>
-            <div class="secondary-btn"><a href="<?php echo esc_url( get_page_link(30) ); ?>"><?php esc_html_e( 'View All Events', 'textdomain' ); ?></a></div>
+            <div class="secondary-btn front-event-btn"><a href="<?php echo esc_url( get_page_link(30) ); ?>"><?php esc_html_e( 'View All Events', 'textdomain' ); ?></a></div>
             
     </section><!-- end of events -->
 

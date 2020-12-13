@@ -30,7 +30,7 @@
       .widget_media_image {
         position: unset;
         width: 40%;
-        .wp-image-107 {
+        .image {
           right: -10%;
           top: -10%;
           object-fit: cover;
@@ -168,7 +168,7 @@
     div.container-fluid {
       height: 600px;
       .widget_media_image {
-        .wp-image-107 {
+        .image {
           height: 700px !important;
           width: 700px;
         }
@@ -265,7 +265,7 @@
   div.content-banner {
     div.container-fluid {
       .widget_media_image {
-        .wp-image-107 {
+        .image {
           height: 892px !important;
           width: 892px;
         }

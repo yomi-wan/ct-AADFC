@@ -774,7 +774,7 @@ main.page .nf-form-content input[type=button]:hover {
     position: unset;
     width: 40%;
   }
-  div.content-banner div.container-fluid .widget_media_image .wp-image-107 {
+  div.content-banner div.container-fluid .widget_media_image .image {
     right: -10%;
     top: -10%;
     -o-object-fit: cover;
@@ -910,7 +910,7 @@ main.page .nf-form-content input[type=button]:hover {
   div.content-banner div.container-fluid {
     height: 600px;
   }
-  div.content-banner div.container-fluid .widget_media_image .wp-image-107 {
+  div.content-banner div.container-fluid .widget_media_image .image {
     height: 700px !important;
     width: 700px;
   }
@@ -992,7 +992,7 @@ main.page .nf-form-content input[type=button]:hover {
 }
 
 @media only screen and (min-width: 1200px) {
-  div.content-banner div.container-fluid .widget_media_image .wp-image-107 {
+  div.content-banner div.container-fluid .widget_media_image .image {
     height: 892px !important;
     width: 892px;
   }

@@ -17,7 +17,8 @@ jQuery(document).ready(function(){
     // checks if Events are empty
       jQuery('#mec_skin_events_147').each(function(){
         if(jQuery(this).height() == 0){
-            jQuery('#events-error').append('<h3 class="text-white text-center">Events Coming Soon!</h3>');
+            jQuery('#events-error').append('<h3 class="text-white text-center mb-5">Events Coming Soon!</h3>');
+            jQuery('.front-event-btn').addClass('d-none');
         }
     })
 
