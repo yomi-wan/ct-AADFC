@@ -10,9 +10,11 @@
  */
 ?>
 <main <?php post_class();?> id="post-<?php the_ID();?>">
-    <div class="content-banner container-fluid container-xl align-items-center">
-
-        <?php get_template_part('template-parts/content', 'banner'); ?>
+    <div class="content-banner">
+<div class=" container-fluid container-xl align-items-center">
+    
+            <?php get_template_part('template-parts/content', 'banner'); ?>
+</div>
     </div>
     <section class="bg-white what-wrapper">
         <!-- what we do section start -->
@@ -62,7 +64,10 @@
         <h2><?php the_field('events_heading'); ?></h2>
         <!-- custom event posts -->
         <div class="events-front-page">
-            <?php echo do_shortcode('[MEC id="147"]'); ?>
+
+            <?php  echo do_shortcode('[MEC id="147"]'); ?>
+
+            <div id="events-error"></div>
         </div>
             <div class="secondary-btn"><a href="<?php echo esc_url( get_page_link(30) ); ?>"><?php esc_html_e( 'View All Events', 'textdomain' ); ?></a></div>
             

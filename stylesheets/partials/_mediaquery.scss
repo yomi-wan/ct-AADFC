@@ -13,31 +13,32 @@
     display: none;
   }
   div.content-banner {
-    display: flex;
-    height: 420px;
-    overflow: unset;
     padding: 0;
-    .widget_text {
-      background: transparent;
-      .textwidget {
-        justify-content: center;
-        height: unset;
+    div.container-fluid {
+      display: flex;
+      height: 420px;
+      .widget_text {
+        background: transparent;
+        .textwidget {
+          justify-content: center;
+          height: unset;
+        }
       }
-    }
-    .banner p{
-      text-shadow: 2px 0px 4px #241e46;
-    }
-    .widget_media_image {
-      position: unset;
-      width: 40%;
-      .wp-image-107 {
-        right: -10%;
-        top: -10%;
-        object-fit: cover;
-        border-radius: 50%;
-        height: 500px !important;
-        width: 500px;
-        position: absolute;
+      .banner p {
+        text-shadow: 2px 0px 4px #241e46;
+      }
+      .widget_media_image {
+        position: unset;
+        width: 40%;
+        .wp-image-107 {
+          right: -10%;
+          top: -10%;
+          object-fit: cover;
+          border-radius: 50%;
+          height: 500px !important;
+          width: 500px;
+          position: absolute;
+        }
       }
     }
   }
@@ -164,17 +165,18 @@
     display: inline-block;
   }
   div.content-banner {
-    height: 600px;
-    .widget_media_image{
-      .wp-image-107 {
-        height: 700px !important;
-        width: 700px;
+    div.container-fluid {
+      height: 600px;
+      .widget_media_image {
+        .wp-image-107 {
+          height: 700px !important;
+          width: 700px;
+        }
+      }
+      .banner p {
+        font-size: 72px;
       }
     }
-    .banner p {
-      font-size: 72px;
-    }
-
   }
 
   h2 {
@@ -261,11 +263,12 @@
 // xl screens
 @media only screen and (min-width: 1200px) {
   div.content-banner {
-    .widget_media_image{
-      .wp-image-107 {
-        right: -20%;
-        height: 892px !important;
-        width: 892px;
+    div.container-fluid {
+      .widget_media_image {
+        .wp-image-107 {
+          height: 892px !important;
+          width: 892px;
+        }
       }
     }
   }

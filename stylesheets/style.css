@@ -750,30 +750,31 @@ main.page .nf-form-content input[type=button]:hover {
     display: none;
   }
   div.content-banner {
+    padding: 0;
+  }
+  div.content-banner div.container-fluid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 420px;
-    overflow: unset;
-    padding: 0;
   }
-  div.content-banner .widget_text {
+  div.content-banner div.container-fluid .widget_text {
     background: transparent;
   }
-  div.content-banner .widget_text .textwidget {
+  div.content-banner div.container-fluid .widget_text .textwidget {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     height: unset;
   }
-  div.content-banner .banner p {
+  div.content-banner div.container-fluid .banner p {
     text-shadow: 2px 0px 4px #241e46;
   }
-  div.content-banner .widget_media_image {
+  div.content-banner div.container-fluid .widget_media_image {
     position: unset;
     width: 40%;
   }
-  div.content-banner .widget_media_image .wp-image-107 {
+  div.content-banner div.container-fluid .widget_media_image .wp-image-107 {
     right: -10%;
     top: -10%;
     -o-object-fit: cover;
@@ -906,14 +907,14 @@ main.page .nf-form-content input[type=button]:hover {
   h1 br {
     display: inline-block;
   }
-  div.content-banner {
+  div.content-banner div.container-fluid {
     height: 600px;
   }
-  div.content-banner .widget_media_image .wp-image-107 {
+  div.content-banner div.container-fluid .widget_media_image .wp-image-107 {
     height: 700px !important;
     width: 700px;
   }
-  div.content-banner .banner p {
+  div.content-banner div.container-fluid .banner p {
     font-size: 72px;
   }
   h2 {
@@ -991,8 +992,7 @@ main.page .nf-form-content input[type=button]:hover {
 }
 
 @media only screen and (min-width: 1200px) {
-  div.content-banner .widget_media_image .wp-image-107 {
-    right: -20%;
+  div.content-banner div.container-fluid .widget_media_image .wp-image-107 {
     height: 892px !important;
     width: 892px;
   }

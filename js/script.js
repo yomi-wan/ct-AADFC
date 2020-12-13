@@ -14,6 +14,13 @@ jQuery(document).ready(function(){
     // removes col-sm for Modern Events Calendar Plugin
     jQuery('#mec_skin_events_147 .col-md-4').removeClass('col-sm-4'); 
 
+    // checks if Events are empty
+      jQuery('#mec_skin_events_147').each(function(){
+        if(jQuery(this).height() == 0){
+            jQuery('#events-error').append('<h3 class="text-white text-center">Events Coming Soon!</h3>');
+        }
+    })
+
 
 });//end of scope
 
