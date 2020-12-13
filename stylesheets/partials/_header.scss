@@ -1,68 +1,79 @@
-nav{
-    background: $text-light;
-    padding: 1rem;
-    box-shadow: -3px 4px 5px -3px $text-dark;
-    -webkit-box-shadow: -3px 4px 5px -3px $text-dark;
+nav {
+  background: $text-light;
+  padding: 1rem;
+  box-shadow: -3px 4px 5px -3px $text-dark;
+  -webkit-box-shadow: -3px 4px 5px -3px $text-dark;
 }
 
 /* nav */
 .navbar-toggler i {
-    color: $orange;
-    font-size: $icon;
+  color: $orange;
+  font-size: $icon;
 }
-div.site-logo img{
-   width: 5rem; 
-   height: 100%;
-   padding-right: 1rem;
+div.site-logo img {
+  width: 5rem;
+  height: 100%;
+  padding-right: 1rem;
 }
-.navbar-nav{
-    li.menu-item{
-        .nav-link{
-            align-items: center;
-            display: flex;
-            .material-icons{
-                color: $text-light;
-                padding-right: 1rem;
-            }
-        }
-
+.navbar-nav {
+  li.menu-item {
+    .nav-link {
+      align-items: center;
+      display: flex;
+      .material-icons {
+        color: $text-light;
+        padding-right: 1rem;
+      }
     }
+  }
+}
+.navbar-collapse {
+  position: absolute;
+  top: 5.7rem;
+  left: 0;
+  padding: $md-space 0 $xl-space $md-space;
+  width: 30rem;
+  background-color: $navy;
+  z-index: 9000;
+  box-shadow: 20px 40px 60px #00000099;
+}
+.navbar-collapse.collapsing {
+  height: auto;
+  -webkit-transition: left 0.6s ease;
+  -o-transition: left 0.6s ease;
+  -moz-transition: left 0.6s ease;
+  transition: left 0.6s ease;
+  left: -90%;
+}
+.navbar-collapse.show {
+  left: 0;
+  -webkit-transition: left 0.6s ease-in;
+  -o-transition: left 0.6s ease-in;
+  -moz-transition: left 0.6s ease-in;
+  transition: left 0.6s ease-in;
 }
 
 // banner
-div.content-banner{
-    background: $background-color;
-    background: linear-gradient(#241e4600, #241e46e1), url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    padding-top: $xl-space;
-    position: relative;
-}
-.navbar-collapse {
-    position: absolute;
-    top: 5.7rem;
+div.content-banner {
+  position: relative;
+  padding-top: 30%;
+  overflow: hidden;
+  .widget_media_image {
+    width: 100%;
     left: 0;
-    padding: $md-space 0 $xl-space $md-space;
-    width: 30rem;
-    background-color: $navy;
-    z-index: 9000;
-    box-shadow: 20px 40px 60px #00000099;
-}
-.navbar-collapse.collapsing {
+    top: 0;
     height: auto;
-    -webkit-transition: left 0.6s ease;
-    -o-transition: left 0.6s ease;
-    -moz-transition: left 0.6s ease;
-    transition: left 0.6s ease;
-    left: -90%;
+    position: absolute;
+    z-index: -5;
+  }
+  .widget_text {
+    padding-left: 1rem;
+    background: #241e46;
+    background: linear-gradient(#241e4600, #241e46e1);
+    .textwidget {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
 }
-.navbar-collapse.show {
-    left: 0;
-    -webkit-transition: left 0.6s ease-in;
-    -o-transition: left 0.6s ease-in;
-    -moz-transition: left 0.6s ease-in;
-    transition: left 0.6s ease-in;
-
-}
-

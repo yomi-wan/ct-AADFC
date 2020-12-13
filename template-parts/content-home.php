@@ -10,9 +10,9 @@
  */
 ?>
 <main <?php post_class();?> id="post-<?php the_ID();?>">
-    <div class="content-banner align-items-center">
+    <div class="content-banner container-fluid container-xl align-items-center">
+
         <?php get_template_part('template-parts/content', 'banner'); ?>
-        <div class="banner-image"></div>
     </div>
     <section class="bg-white what-wrapper">
         <!-- what we do section start -->

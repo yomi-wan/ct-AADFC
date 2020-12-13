@@ -497,17 +497,6 @@ div.site-logo img {
   padding-right: 1rem;
 }
 
-div.content-banner {
-  background: #241E46;
-  background: -webkit-gradient(linear, left top, left bottom, from(#241e4600), to(#241e46e1)), url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
-  background: linear-gradient(#241e4600, #241e46e1), url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding-top: 12rem;
-  position: relative;
-}
-
 .navbar-collapse {
   position: absolute;
   top: 5.7rem;
@@ -531,6 +520,41 @@ div.content-banner {
   left: 0;
   -webkit-transition: left 0.6s ease-in;
   transition: left 0.6s ease-in;
+}
+
+div.content-banner {
+  position: relative;
+  padding-top: 30%;
+  overflow: hidden;
+}
+
+div.content-banner .widget_media_image {
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: auto;
+  position: absolute;
+  z-index: -5;
+}
+
+div.content-banner .widget_text {
+  padding-left: 1rem;
+  background: #241e46;
+  background: -webkit-gradient(linear, left top, left bottom, from(#241e4600), to(#241e46e1));
+  background: linear-gradient(#241e4600, #241e46e1);
+}
+
+div.content-banner .widget_text .textwidget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 /* footer */
@@ -726,34 +750,38 @@ main.page .nf-form-content input[type=button]:hover {
     display: none;
   }
   div.content-banner {
-    background: #241e46;
-    background-color: transparent;
-    background-image: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 42rem;
-    overflow: hidden;
+    height: 420px;
+    overflow: unset;
     padding: 0;
   }
-  div.content-banner .banner-image {
-    position: absolute;
-    top: -10%;
-    left: 45%;
-    width: 70vw;
-    height: 70vw;
-    border-radius: 100%;
-    overflow: hidden;
-    z-index: -1;
+  div.content-banner .widget_text {
     background: transparent;
-    background-image: url(http://african.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/11/banner-bgd-scaled.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  }
+  div.content-banner .widget_text .textwidget {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: unset;
   }
   div.content-banner .banner p {
-    z-index: 2;
-    text-shadow: 2px 0px 4px #241E46;
+    text-shadow: 2px 0px 4px #241e46;
+  }
+  div.content-banner .widget_media_image {
+    position: unset;
+    width: 40%;
+  }
+  div.content-banner .widget_media_image .wp-image-107 {
+    right: -10%;
+    top: -10%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+    height: 500px !important;
+    width: 500px;
+    position: absolute;
   }
   h2.entry-title {
     margin-top: 4.8rem;
@@ -878,8 +906,15 @@ main.page .nf-form-content input[type=button]:hover {
   h1 br {
     display: inline-block;
   }
-  .banner p {
-    font-size: 7.57rem;
+  div.content-banner {
+    height: 600px;
+  }
+  div.content-banner .widget_media_image .wp-image-107 {
+    height: 700px !important;
+    width: 700px;
+  }
+  div.content-banner .banner p {
+    font-size: 72px;
   }
   h2 {
     font-size: 5.68rem;
@@ -910,12 +945,6 @@ main.page .nf-form-content input[type=button]:hover {
   div.site-logo img {
     width: 10rem;
     height: 100%;
-  }
-  div.content-banner {
-    height: 600px;
-  }
-  div.content-banner .banner p {
-    font-size: 72px;
   }
   li.current_page_item a.nav-link {
     color: #8c1b64;
@@ -962,9 +991,10 @@ main.page .nf-form-content input[type=button]:hover {
 }
 
 @media only screen and (min-width: 1200px) {
-  .banner-image {
-    max-width: 892px;
-    max-height: 892px;
+  div.content-banner .widget_media_image .wp-image-107 {
+    right: -20%;
+    height: 892px !important;
+    width: 892px;
   }
   body.mec-events-template-default.single.single-mec-events section#main-content .mec-wrap article.mec-single-event.mec-single-modern div.mec-events-event-image {
     padding-right: 5rem;
