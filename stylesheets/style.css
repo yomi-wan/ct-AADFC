@@ -585,7 +585,7 @@ footer p a:hover {
 }
 
 .footer-container aside {
-  padding: 4.8rem 10px;
+  padding: 4.8rem 1rem;
   background-color: #F2B705;
   color: #fff;
 }
@@ -980,6 +980,9 @@ main.page .nf-form-content input[type=button]:hover {
   .footer-container aside div.textwidget {
     max-width: 450px;
     margin-right: auto;
+  }
+  .footer-container aside div.textwidget.custom-html-widget {
+    max-width: unset;
   }
   .footer-container aside:first-of-type h3 {
     max-width: 450px;

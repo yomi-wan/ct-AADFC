@@ -246,7 +246,11 @@
     div.textwidget {
       max-width: 450px;
       margin-right: auto;
+    &.custom-html-widget{
+      max-width: unset;
     }
+    }
+    
     &:first-of-type {
       h3 {
         max-width: 450px;
