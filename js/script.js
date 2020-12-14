@@ -22,6 +22,16 @@ jQuery(document).ready(function(){
         }
     })
 
+    // adds button class to a link in the banner
+    if(jQuery("#text-6 a").length){
+        // removed the p element that clashes with styling
+        jQuery("#text-6 a").parents('p').addClass('remove');
+        jQuery("#text-6").find("p.remove").contents().unwrap();
+        // wraps link with btn div
+        jQuery( "#text-6 a" ).wrap( '<div class="primary-btn m-0"></div>' );
+    }
+
+
 
 });//end of scope
 
