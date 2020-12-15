@@ -11,7 +11,7 @@
 ?>
 <main <?php post_class();?> id="post-<?php the_ID();?>">
     <div class="content-banner">
-<div class=" container-fluid container-xl align-items-center">
+<div class=" container-fluid container-xl align-items-center p-0">
     
             <?php get_template_part('template-parts/content', 'banner'); ?>
 </div>
