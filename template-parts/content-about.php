@@ -1,7 +1,7 @@
 <?php
 /****
  * 
- * Template part for displaying content in the about-page
+ * Template part for displaying content in the About Page
  * 
  * @link https://developer.wordpress.org/theme/basics/template-hierarchy/
  * 
@@ -22,25 +22,28 @@
             <?php the_content(); ?>
         </div>
     </section>
-    <div class="container text-white business-section">
-        <div class="row">
-            <?php if (have_rows('sponsors')): ?>
-            <?php while (have_rows('sponsors')):  the_row();?>
-            <article class="col-md-6">
-                <h4><?php the_sub_field('sponsors_heading');?></h4>
-                <div><?php the_sub_field('list');?></div>
-            </article>
-            <?php endwhile; ?>
-            <?php endif; ?>
 
-            <?php if (have_rows('business_directory')): ?>
-            <?php while (have_rows('business_directory')):  the_row();?>
-            <article class="col-md-6">
-                <h4><?php the_sub_field('business_heading');?></h4>
-                <div><?php the_sub_field('list');?></div>
-            </article>
-            <?php endwhile; ?>
-            <?php endif; ?>
+    <div class="container biz-directory">
+        <div class="d-md-flex justify-content-md-between">
+            <section>
+                <?php if (have_rows('sponsors')): ?>
+                <?php while (have_rows('sponsors')): the_row();?>
+                    <h3><?php the_sub_field('sponsors_heading');?></h3>
+                    <div class="text-white"><?php the_sub_field('list');?></div>
+                <?php endwhile; ?>
+                <?php endif; ?>
+            </section>
+
+            <section>
+                <?php if (have_rows('business_directory')): ?>
+                <?php while (have_rows('business_directory')): the_row();?>
+                    <h3><?php the_sub_field('business_heading');?></h3>
+                    <div class="text-white"><?php the_sub_field('list');?></div>
+                <?php endwhile; ?>
+                <?php endif; ?>
+            </section>
         </div>
     </div>
 </main>
+
+

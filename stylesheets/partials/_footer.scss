@@ -4,9 +4,20 @@ footer {
   color: $orange;
   font-size: $xsFont;
   padding: $xs-space 0;
+  li a {
+    color: $orange;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    &:hover {
+      color: $red;
+    }
+  }
   p {
     padding: 0;
     margin: 0;
+    &.developers{
+      font-size: 1.2rem;
+    }
     a {
       color: $orange;
       -webkit-box-shadow: unset;

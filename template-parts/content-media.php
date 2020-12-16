@@ -15,49 +15,39 @@
         <div class="text-white"><?php the_content(); ?></div>
         
     </div>
+    <?php 
+    // will display up to 6 gallery on this page.
+    $args = array( 'post_type' => 'gallery', 
+    'posts_per_page' => 6,
+    'order'             => 'DESC' 
+    );
+    $the_query = new WP_Query( $args ); 
+?>
+    <section class="container past-galleries">
+        <h3><?php _e('Past Events'); ?></h3>
+        <p class="text-white">Check out our galleries from past events.</p>
 
-    <section class="galleries-block">
-        <div class="container">
-        <!-- Display the galleries in here -->
-
-        <!-- Loop through and display each individual gallery here -->
-        <?php 
-            $args = array(
-                'post_type'     =>  'gallery',
-                'posts_per_page'    =>  4, // not a fan of this...maybe more galleries at once?
-                'orderby'           => 'date',
-                'order'             => 'DESC'
-            );
-
-            // save WP_Query object to variable $the_query 
-            $the_query = new WP_Query( $args );
-        ?>
-
-        <?php if( $the_query -> have_posts() ) : ?>
-            <?php while( $the_query -> have_posts() ) : $the_query -> the_post(); ?>
-
-                <div class="gallery-preview">
-
-                <!-- display heading of post as clickable link -->
-                <a href="<?php the_permalink(); ?>"><?php the_title('<h3 class="card-title">', '</h3>'); ?></a>
-
-                <!-- display featured image/thumbnail as a clickable link -->
-                <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post -> ID, 'large' ); ?></a>
-
-               
-
-                <!-- display the excerpt of the post (probably not needed for galleries) -->
-                <?php the_excerpt(); ?>
+        <div class="row">
+            <?php if ( $the_query->have_posts() ) : ?>
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+            <div class="col-6 col-lg-4 mb-3">
+                <div class="card h-100">
+                    <header>
+                        <div class="aspect-ratio-box">
+                            <a
+                                href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?></a>
+                        </div>
+                    </header>
+                    <a href="<?php the_permalink(); ?>"><div class="card-text">
+                        <?php the_title('<h4 class="card-title">', '</h4>'); ?>
+                    </div></a>
                 </div>
+            </div>
             <?php endwhile; ?>
-
-            <!-- Finally, return $post to the global scope(?) -->
             <?php wp_reset_postdata(); ?>
-                
-                
-        <?php endif; ?>
-        
-
+            <?php else : ?>
+            <p><?php _e( 'Sorry, no galleries matched your criteria.' ); ?></p>
+            <?php endif; ?>
         </div>
     </section>
 
