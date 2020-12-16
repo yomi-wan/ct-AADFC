@@ -2,7 +2,7 @@
 Theme Name: AADFC
 Theme URI: https://github.com/yomi-wan/ct-AADFC
 Author: Yomi
-Author URI: Author (dev) website URL
+Author URI: https://yomijordan.com
 Description: custom website for the African and African Descendent Friendship Club of St. Albert, capstone project
 Version: 1.0
 License: GNU General Public License v2 or later
@@ -14,8 +14,6 @@ Tags: Used to find your theme when user(s) searches in the themes panel.
 
 /** CSS Styles go here **/
 @import "stylesheets/style.css";
-@import"stylesheets/ian.css";
-@import"stylesheets/kobe.css";
 
 
 /*!

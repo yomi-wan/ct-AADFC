@@ -31,9 +31,9 @@
         <?php echo do_shortcode('[MEC id="123"]'); ?>
     </div>
     <?php 
-    // will display up to 4 gallery on this page.
+    // will display up to 3 gallery on this page.
     $args = array( 'post_type' => 'gallery', 
-    'posts_per_page' => 4,
+    'posts_per_page' => 3,
     'order'             => 'DESC' 
     );
     $the_query = new WP_Query( $args ); 
@@ -46,7 +46,7 @@
         <div class="row">
             <?php if ( $the_query->have_posts() ) : ?>
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-            <div class="col-6 col-lg-4 mb-3">
+            <div class="col-6 col-md-4 mb-3">
                 <div class="card h-100">
                     <header>
                         <div class="aspect-ratio-box">

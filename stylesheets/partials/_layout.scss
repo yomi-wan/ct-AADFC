@@ -221,3 +221,54 @@ body.mec-events-template-default.single.single-mec-events {
   margin-top: $lg-space;
 }
 
+// Media & Gallery styling
+
+.single-gallery-page-title > h2 {
+  color: $text-dark;
+}
+
+div.single-gallery-page-title {
+  background-color: $yellow;
+  padding: 2.4rem 0;
+  margin-bottom: $lg-space;
+}
+
+.media-content-title p:first-of-type {
+  color: $text-light;
+  font-weight: 600;
+}
+
+.media-content-title p,
+.media-content-title a {
+  color: $text-light;
+}
+
+.media-content-title h3,
+.media-content-title p {
+  max-width: 50%;
+}
+
+h3.sub-title {
+  max-width: inherit;
+  padding-left: 0;
+}
+
+.back-to-prev {
+  background-color: $background-color;
+  color: $text-light !important;
+  text-transform: uppercase;
+  width: 85px;
+  height: 36px;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px #0d0d0d74;
+}
+
+.back-to-prev:hover {
+  color: $background-color !important;
+  background-color: $text-light;
+}
+.galleries-block{
+  padding-top: $lg-space;
+}

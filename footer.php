@@ -20,11 +20,11 @@
         <div class="container-fluid d-md-flex justify-content-between align-items-center">
             <ul class="d-flex flex-wrap">
                 <li>&copy;<?php echo date('Y'); ?> Africans &amp; African Descendant Friendship Club | </li>
-                <!-- <li> <a href="<"?php echo esc_url( get_permalink( get_page_by_path( 'privacy-policy' ) ) );?>"> Privacy Policy</a></li> -->
+                <!-- <li> <a href="<"?"php echo esc_url( get_permalink( get_page_by_path( 'privacy-policy' ) ) );?>"> Privacy Policy</a> </li> -->
                 <!-- <li> | <a href="#">Terms &amp; Conditions</a></li>
                  -->
             </ul>
-            <p class="developers m-0">Developer Team <a href="https://www.yomijordan.com/" target="_blank">Yomi</a>, <a href="https://ianr.dev/" target="_blank">Ian</a> &amp; <a href="#" target="_blank">Kobe</a></p>
+            <p class="developers m-0">Developer Team <a href="https://www.yomijordan.com/" target="_blank">Yomi</a>, <a href="https://ianr.dev/" target="_blank">Ian</a> &amp; <a href="https://kobexamoh.co/" target="_blank">Kobe</a></p>
         </div>
         <?php wp_footer(); ?>
     </body>
