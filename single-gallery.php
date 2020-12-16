@@ -9,35 +9,32 @@
 get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-    <?php //echo get_post_meta($post->ID, 'name', true); ?>
+<?php //echo get_post_meta($post->ID, 'name', true); ?>
 
-    <?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-    <div class="divider"><img src="<?php bloginfo('get_template_directory_uri(  )'); ?>" alt="" /></div>
-    <div class="single-gallery-page-title">
-        <?php the_title('<h2 class="container gallery-title">', '</h2>');  ?>
-        
-        <!-- go back to previous page -->
-        <a class="back-to-prev" type="button" onclick="history.back();">Back</a>
-       
-    </div>
-    
+<?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+<div class="divider"><img src="<?php bloginfo('get_template_directory_uri(  )'); ?>" alt="" /></div>
+<div class="single-gallery-page-title">
     <div class="container">
-        <?php the_content(); ?>
+        <?php the_title('<h2 class="entry-title gallery-title">', '</h2>');  ?>
+
+        <div class="d-flex justify-content-between">
+            <!-- ACF Fields -->
+            <p class="event-date"><?php the_field('event_date');?></p>
+
+            <!-- end of ACF block -->
+            <!-- go back to previous page -->
+            <a class="back-to-prev" type="button" onclick="history.back();">Back</a>
+
+        </div>
     </div>
+</div>
 
-    <!-- ACF Fields -->
-	<?php $event_date = get_field('date');?>
+<div class="container">
+    <?php the_content(); ?>
+</div>
 
-    <!-- ACF is using a group, so the group must be declared as a variable to display content -->
-	<?php if($event_date) : ?>	
-		<!-- display date -->	
-        <p><?php echo  $event_date['date']; ?></p>
-        
-	<?php endif; ?>
-    
-    <!-- end of ACF block -->
 
-	
+
 <?php endwhile; // end of the loop. ?>
-  
+
 <?php get_footer(); ?>

@@ -56,6 +56,7 @@
                     </header>
                     <a href="<?php the_permalink(); ?>"><div class="card-text">
                         <?php the_title('<h4 class="card-title">', '</h4>'); ?>
+                        <p class="event-date-img"><?php the_field('event_date');?></p>
                     </div></a>
                 </div>
             </div>

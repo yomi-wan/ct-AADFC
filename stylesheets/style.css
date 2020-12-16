@@ -156,6 +156,10 @@ main.page .split-layout div.col-12 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -271,7 +275,7 @@ body.mec-events-template-default.single.single-mec-events section#main-content p
   margin-top: 7.2rem;
 }
 
-.single-gallery-page-title > h2 {
+h2.gallery-title {
   color: #0D0D0D;
 }
 
@@ -519,6 +523,15 @@ button:focus {
 p.fact-2 {
   font-size: 2.4rem;
   color: #FF7549;
+  font-family: "Oswald", sans-serif;
+}
+
+p.event-date {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.4rem;
+}
+
+.event-date-img {
   font-family: "Oswald", sans-serif;
 }
 

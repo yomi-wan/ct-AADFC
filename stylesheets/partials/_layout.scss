@@ -133,6 +133,7 @@ main.page {
       background-color: $trans-purple;
       padding: auto;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
     }
@@ -223,7 +224,7 @@ body.mec-events-template-default.single.single-mec-events {
 
 // Media & Gallery styling
 
-.single-gallery-page-title > h2 {
+h2.gallery-title {
   color: $text-dark;
 }
 
