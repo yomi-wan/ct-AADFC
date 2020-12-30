@@ -139,18 +139,20 @@ main.page .split-layout div.col-12 {
   position: absolute;
   top: 8px;
   left: 16px;
-  color: #fff;
+  color: transparent;
 }
 
 .past-galleries .card .card-text h4 {
-  color: #fff;
+  color: transparent;
 }
 
 .past-galleries .card:hover .card-text {
-  top: 2rem;
-  bottom: 2rem;
-  left: 2rem;
-  right: 2rem;
+  top: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  text-align: center;
   background-color: #8c1b64d8;
   padding: auto;
   display: -webkit-box;
@@ -166,6 +168,11 @@ main.page .split-layout div.col-12 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #fff;
+}
+
+.past-galleries .card:hover .card-text h4 {
+  color: #fff;
 }
 
 .error404 .mec-load-more-button,

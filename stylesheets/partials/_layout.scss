@@ -120,22 +120,28 @@ main.page {
       position: absolute;
       top: 8px;
       left: 16px;
-      color: $text-light;
+      color: transparent;
       h4{
-        color: $text-light;
+        color: transparent;
       }
     }
     &:hover .card-text{
-      top:2rem;
-      bottom: 2rem;
-      left: 2rem;
-      right: 2rem;
+      top:1rem;
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      padding: 1rem;
+      text-align: center;
       background-color: $trans-purple;
       padding: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      color: $text-light;
+      h4{
+        color: $text-light;
+      }
     }
   }
 }
